@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://common/quit_on_action.gd" type="Script" id=1]
 [ext_resource path="res://common/audio_fader.tscn" type="PackedScene" id=2]
@@ -8,11 +8,12 @@
 [ext_resource path="res://main/card.tscn" type="PackedScene" id=6]
 [ext_resource path="res://gui/hud.tscn" type="PackedScene" id=7]
 [ext_resource path="res://main/cards.gd" type="Script" id=8]
-[ext_resource path="res://gui/font.tres" type="DynamicFont" id=9]
+[ext_resource path="res://font.tres" type="DynamicFont" id=9]
 [ext_resource path="res://main/main.gd" type="Script" id=10]
-[ext_resource path="res://main/assets/1a.png" type="Texture" id=11]
-[ext_resource path="res://main/assets/2a.png" type="Texture" id=12]
-[ext_resource path="res://main/assets/placeholder_card.png" type="Texture" id=13]
+[ext_resource path="res://main/assets/cards/1a.png" type="Texture" id=11]
+[ext_resource path="res://main/assets/cards/2a.png" type="Texture" id=12]
+[ext_resource path="res://main/assets/cards/placeholder_card.png" type="Texture" id=13]
+[ext_resource path="res://main/assets/bg1.jpg" type="Texture" id=14]
 
 [sub_resource type="Animation" id=1]
 resource_name = "fade_in"
@@ -102,6 +103,13 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="BG" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="Sprite" type="Sprite" parent="BG"]
+position = Vector2( 480, 270 )
+texture = ExtResource( 14 )
+
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="HUD" parent="CanvasLayer" instance=ExtResource( 7 )]
@@ -112,6 +120,7 @@ anchor_bottom = 1.0
 mouse_filter = 2
 color = Color( 0, 0, 0, 0 )
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -125,6 +134,7 @@ margin_bottom = 489.587
 custom_fonts/font = ExtResource( 9 )
 text = "Next"
 __meta__ = {
+"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -150,18 +160,22 @@ script = ExtResource( 3 )
 script = ExtResource( 8 )
 
 [node name="Card" parent="Cards" instance=ExtResource( 6 )]
+modulate = Color( 0.960784, 0.368627, 0.368627, 1 )
 position = Vector2( -311.479, 0 )
 texture = ExtResource( 11 )
 
 [node name="Card2" parent="Cards" instance=ExtResource( 6 )]
+modulate = Color( 0.960784, 0.368627, 0.368627, 1 )
 position = Vector2( -105.508, 1.6817 )
 texture = ExtResource( 12 )
 
 [node name="Card3" parent="Cards" instance=ExtResource( 6 )]
+modulate = Color( 0.960784, 0.368627, 0.368627, 1 )
 position = Vector2( 112.441, 0.205997 )
 texture = ExtResource( 13 )
 
 [node name="Card4" parent="Cards" instance=ExtResource( 6 )]
+modulate = Color( 0.960784, 0.368627, 0.368627, 1 )
 position = Vector2( 321.536, 7.58518 )
 texture = ExtResource( 13 )
 

@@ -1,14 +1,32 @@
 extends Node
 
 
-#onready var tween: Tween = $Tween
-onready var rect: ColorRect = $CanvasLayer/ColorRect
+export(Array, String, MULTILINE) var texts
+export(Array, Texture) var bgs
+
+onready var rect: TextureRect = $CanvasLayer/TextureRect
+onready var label: Label = $CanvasLayer/Label
 onready var anim: AnimationPlayer = $AnimationPlayer
+
+var _idx = 0
+
+func _ready():
+	_update_bg()
 
 
 func _unhandled_input(event):
 	if event.is_action_pressed("ui_accept"):
 		anim.play("fader")
 
+
 func _change_screen():
-	print("change screen")
+	_idx += 1
+	if _idx < texts.size():
+		_update_bg()
+	else:
+		get_tree().change_scene("res://main/main.tscn")
+
+
+func _update_bg():
+	rect.texture = bgs[_idx]
+	label.text = texts[_idx]

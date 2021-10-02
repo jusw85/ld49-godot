@@ -21,7 +21,7 @@ func _ready():
 func _on_Go_pressed():
 	anim.play("fade_in")
 	go.visible = false
-	
+
 
 
 func _on_Cards_cards_selected(selected):
