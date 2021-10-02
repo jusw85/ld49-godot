@@ -1,12 +1,132 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://common/quit_on_action.gd" type="Script" id=1]
 [ext_resource path="res://common/audio_fader.tscn" type="PackedScene" id=2]
 [ext_resource path="res://common/camera_shake.gd" type="Script" id=3]
 [ext_resource path="res://main/camera2d.gd" type="Script" id=4]
 [ext_resource path="res://main/bgm.gd" type="Script" id=5]
+[ext_resource path="res://main/card.tscn" type="PackedScene" id=6]
+[ext_resource path="res://gui/hud.tscn" type="PackedScene" id=7]
+[ext_resource path="res://main/cards.gd" type="Script" id=8]
+[ext_resource path="res://gui/font.tres" type="DynamicFont" id=9]
+[ext_resource path="res://main/main.gd" type="Script" id=10]
+[ext_resource path="res://main/assets/1a.png" type="Texture" id=11]
+[ext_resource path="res://main/assets/2a.png" type="Texture" id=12]
+[ext_resource path="res://main/assets/placeholder_card.png" type="Texture" id=13]
+
+[sub_resource type="Animation" id=1]
+resource_name = "fade_in"
+length = 0.5
+step = 0.0166667
+tracks/0/type = "value"
+tracks/0/path = NodePath("CanvasLayer/ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0 ), Color( 0, 0, 0, 0.627451 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CanvasLayer/Next:self_modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CanvasLayer/Next:visible")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "fade_out"
+length = 0.5
+step = 0.0166667
+tracks/0/type = "value"
+tracks/0/path = NodePath("CanvasLayer/ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 0, 0, 0, 0.627451 ), Color( 0, 0, 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CanvasLayer/Next:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ false ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("CanvasLayer/Next:self_modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ) ]
+}
 
 [node name="Main" type="Node2D"]
+script = ExtResource( 10 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="HUD" parent="CanvasLayer" instance=ExtResource( 7 )]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color( 0, 0, 0, 0 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Next" type="Button" parent="CanvasLayer"]
+visible = false
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 458.287
+margin_top = 429.587
+margin_right = 569.287
+margin_bottom = 489.587
+custom_fonts/font = ExtResource( 9 )
+text = "Next"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="QuitOnAction" type="Node" parent="."]
 script = ExtResource( 1 )
@@ -17,9 +137,53 @@ script = ExtResource( 5 )
 [node name="AudioFader" parent="Bgm" instance=ExtResource( 2 )]
 
 [node name="Camera2D" type="Camera2D" parent="."]
+current = true
 script = ExtResource( 4 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Shake" type="Node" parent="Camera2D"]
 script = ExtResource( 3 )
+
+[node name="Cards" type="Node" parent="."]
+script = ExtResource( 8 )
+
+[node name="Card" parent="Cards" instance=ExtResource( 6 )]
+position = Vector2( -311.479, 0 )
+texture = ExtResource( 11 )
+
+[node name="Card2" parent="Cards" instance=ExtResource( 6 )]
+position = Vector2( -105.508, 1.6817 )
+texture = ExtResource( 12 )
+
+[node name="Card3" parent="Cards" instance=ExtResource( 6 )]
+position = Vector2( 112.441, 0.205997 )
+texture = ExtResource( 13 )
+
+[node name="Card4" parent="Cards" instance=ExtResource( 6 )]
+position = Vector2( 321.536, 7.58518 )
+texture = ExtResource( 13 )
+
+[node name="Go" type="Button" parent="."]
+visible = false
+margin_left = 382.591
+margin_top = 150.538
+margin_right = 429.591
+margin_bottom = 191.538
+custom_fonts/font = ExtResource( 9 )
+text = "Go!"
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/fade_in = SubResource( 1 )
+anims/fade_out = SubResource( 2 )
+
+[connection signal="pressed" from="CanvasLayer/Next" to="." method="_on_Next_pressed"]
+[connection signal="cards_selected" from="Cards" to="." method="_on_Cards_cards_selected"]
+[connection signal="pressed" from="Go" to="." method="_on_Go_pressed"]
 
 [editable path="Bgm/AudioFader"]
