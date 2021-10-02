@@ -6,12 +6,11 @@
 [ext_resource path="res://intro/assets/StartingCS_3of3.png" type="Texture" id=4]
 [ext_resource path="res://intro/assets/StartingCS_2of3.png" type="Texture" id=5]
 
-[sub_resource type="DynamicFont" id=2]
+[sub_resource type="DynamicFont" id=1]
 size = 24
 font_data = ExtResource( 3 )
 
-[sub_resource type="Animation" id=1]
-resource_name = "fader"
+[sub_resource type="Animation" id=2]
 length = 0.5
 step = 0.0166667
 tracks/0/type = "value"
@@ -51,6 +50,7 @@ bgs = [ ExtResource( 2 ), ExtResource( 5 ), ExtResource( 4 ) ]
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
 margin_right = 960.0
 margin_bottom = 540.0
+mouse_filter = 2
 texture = ExtResource( 2 )
 __meta__ = {
 "_edit_lock_": true,
@@ -62,7 +62,7 @@ margin_left = 602.0
 margin_top = 64.0
 margin_right = 899.0
 margin_bottom = 491.0
-custom_fonts/font = SubResource( 2 )
+custom_fonts/font = SubResource( 1 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
 autowrap = true
@@ -75,6 +75,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 margin_right = 40.0
 margin_bottom = 40.0
+mouse_filter = 2
 color = Color( 0, 0, 0, 0 )
 __meta__ = {
 "_edit_lock_": true,
@@ -82,4 +83,4 @@ __meta__ = {
 }
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-anims/fader = SubResource( 1 )
+anims/fader = SubResource( 2 )
