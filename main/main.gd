@@ -21,7 +21,7 @@ onready var next = $CanvasLayer/Next
 func _ready():
 	randomize()
 	rng.randomize()
-	for i in range(13):
+	for _i in range(13):
 		resources.append(0)
 	for i in range(1, 43):
 		cards_data.append(load("res://cards/card" + str(i) + ".tres"))
@@ -80,24 +80,20 @@ func _on_Go_pressed():
 	cards.fade_all()
 	yield(get_tree().create_timer(1.0), "timeout")
 
-	var res = cards.cards[cards._selected_idx].response
-	$"Control/Response".text = res
+	var card = cards.cards[cards._selected_idx]
 
-	var idx = cards.cards[cards._selected_idx].card_idx
-	seen_cards[idx] = true
+	$"Control/Response".text = card.response
+	seen_cards[card.card_idx] = true
+	for i in range(13):
+		resources[i] += card.resource_changes[i]
+	if card.resource_changes[12] != 0:
+		emit_signal("lumber_changed", resources[12])
 
 	cards.reset()
 	rand_cards()
 
 	state = State.RESPONSE
-
-#	add_lumber(10)
 #	$"Viewports/1card/Card".fade(false)
-
-
-func add_lumber(amount):
-	resources[12] += amount
-	emit_signal("lumber_changed", resources[12])
 
 
 func _on_Cards_cards_selected(selected):
@@ -114,5 +110,5 @@ func _on_Next_pressed():
 #	$"Viewports/1card/Card".fade(true)
 
 
-func _on_Card_show_data(data):
-	$Control/Description.text = data
+func _on_Card_show_text(text):
+	$Control/Description.text = text

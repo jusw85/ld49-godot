@@ -249,10 +249,10 @@ __meta__ = {
 
 [connection signal="lumber_changed" from="." to="CanvasLayer/HUD" method="_on_Main_lumber_changed"]
 [connection signal="cards_selected" from="Viewports/4cards/Cards" to="." method="_on_Cards_cards_selected"]
-[connection signal="show_data" from="Viewports/4cards/Cards/CardsGroup/Card0" to="." method="_on_Card_show_data"]
-[connection signal="show_data" from="Viewports/4cards/Cards/CardsGroup/Card1" to="." method="_on_Card_show_data"]
-[connection signal="show_data" from="Viewports/4cards/Cards/CardsGroup/Card2" to="." method="_on_Card_show_data"]
-[connection signal="show_data" from="Viewports/4cards/Cards/CardsGroup/Card3" to="." method="_on_Card_show_data"]
+[connection signal="show_text" from="Viewports/4cards/Cards/CardsGroup/Card0" to="." method="_on_Card_show_text"]
+[connection signal="show_text" from="Viewports/4cards/Cards/CardsGroup/Card1" to="." method="_on_Card_show_text"]
+[connection signal="show_text" from="Viewports/4cards/Cards/CardsGroup/Card2" to="." method="_on_Card_show_text"]
+[connection signal="show_text" from="Viewports/4cards/Cards/CardsGroup/Card3" to="." method="_on_Card_show_text"]
 [connection signal="pressed" from="CanvasLayer/Next" to="." method="_on_Next_pressed"]
 [connection signal="pressed" from="Go" to="." method="_on_Go_pressed"]
 

@@ -1,6 +1,6 @@
 extends Spatial
 
-signal show_data(data)
+signal show_text(text)
 signal is_clicked(idx)
 
 var idx = 0
@@ -8,8 +8,9 @@ var is_slided = false
 var is_faded = false
 
 var card_idx = 0
-var data = ""
+var text = ""
 var response = ""
+var resource_changes = []
 
 onready var fade_anim: AnimationPlayer = $FadeAnimationPlayer
 onready var slide_anim: AnimationPlayer = $SlideAnimationPlayer
@@ -48,8 +49,9 @@ func slide(do_slide: bool, instant = false):
 
 func set_data(data, p_card_idx):
 	set_face(data.front_face, data.front_face)
-	self.data = data.text
+	text = data.text
 	response = data.response
+	resource_changes = data.resource_changes
 	card_idx = p_card_idx
 
 
@@ -62,12 +64,12 @@ func set_face(front: Texture, back: Texture):
 func _on_Area_input_event(_camera, event, _click_position, _click_normal, _shape_idx):
 	if NC.EventUtils.is_lclick(event):
 		emit_signal("is_clicked", idx)
-		emit_signal("show_data", data)
+		emit_signal("show_text", text)
 
 
 func _on_Area_mouse_entered():
-	emit_signal("show_data", data)
+	emit_signal("show_text", text)
 
 
 func _on_Area_mouse_exited():
-	emit_signal("show_data", "")
+	emit_signal("show_text", "")
