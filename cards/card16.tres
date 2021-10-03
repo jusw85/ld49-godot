@@ -1,0 +1,14 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://cards/carddialog.gd" type="Script" id=1]
+[ext_resource path="res://cards/card_actual/Wiggly_buttocks.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+front_face = ExtResource( 2 )
+text = "Wiggly Pig shakes her buttocks"
+response = "Wiggly was watching trending videos on social media via her mobile device, when she discovered a popular dance called 'twerking'. Excitedly, she started practicing her 'twerking' moves behind the barn.
+Nanny Goat muttered to herself, \"Girls these days have no sense of propriety!\"
+Ham Solo is pleased with what he saw.
+Mr Goatse is pleased with what he saw.
+Cluck Norris is pleased with what he saw."

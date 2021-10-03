@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://cards/carddialog.gd" type="Script" id=1]
+[ext_resource path="res://cards/card_actual/Wiggly_Mud.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+front_face = ExtResource( 2 )
+text = "Wiggly Pig finds a mud puddle"
+response = "Wiggly finds a nice, warm mud puddle. She took out her boots and dived straight into the mud. "
