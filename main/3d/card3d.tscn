@@ -126,3 +126,5 @@ material/0 = SubResource( 7 )
 shape = SubResource( 8 )
 
 [connection signal="input_event" from="Spatial/Area" to="." method="_on_Area_input_event"]
+[connection signal="mouse_entered" from="Spatial/Area" to="." method="_on_Area_mouse_entered"]
+[connection signal="mouse_exited" from="Spatial/Area" to="." method="_on_Area_mouse_exited"]

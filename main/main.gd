@@ -9,7 +9,7 @@ export (Array, Resource) var cards_data
 
 onready var go = $Go
 onready var anim = $AnimationPlayer
-onready var anim2 = $"4cards/4cards/AnimationPlayer"
+#onready var anim2 = $"4cards/4cards/AnimationPlayer"
 onready var viewport = $"4cards/Viewport"
 onready var cards = $"4cards/Viewport/Cards"
 
@@ -51,3 +51,7 @@ func _on_Next_pressed():
 	cards.unfade_all()
 	$Viewport/Card.fade(true)
 #	cards.show_selected(false)
+
+
+func _on_Card_show_data(data):
+	$Control/Description.text = data
