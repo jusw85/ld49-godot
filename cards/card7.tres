@@ -1,0 +1,13 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://cards/carddialog.gd" type="Script" id=1]
+[ext_resource path="res://cards/card_actual/Einstein_Equation.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+front_face = ExtResource( 2 )
+text = "Albert Eggstein solves an equation"
+response = "Professor Albert Eggstein went to Billy's and Nanny's house to look for him, only to discover a broken front door and nobody at home. Albert Eggstein analysized the damages, and instantly recognised the damage was smilar to the fence broken by Cluck Norris from his famous round house kick. 
+\"So, Nanny is cheating on Billy with Cluck Norris, and to do that, Nanny told Billy to go to the hills to collect mushrooms, but instead, Billy bought magic mushrooms from Ham Solo. Under the influence of the magic mushroom, Billy would want to apologise to Wiggly, who will run away after what he did to her mother, Mrs Bacon. Ham Solo, on his 'shoot first' principle, will try to take down Billy, which will trigger Colonel's PTSD. Ramsey who was upset of his lost recipe, will go after Ham Solo with his sharpened knife. If Ramsey knows about Goatse's mystery meat - the pork loin which was fed to the pigs, there will be anarchy!\"
+Just when seemed doomed, Albert Eggstein saw Mrs Bacon and Billy Goat embracing each other.
+\"Perhaps not all are lost.\" thought Albert Eggstein."

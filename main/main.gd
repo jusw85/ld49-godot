@@ -5,6 +5,7 @@ enum State { PICKING, RESPONSE }
 var state = State.PICKING
 
 export (Array, Resource) var cards_data
+var cards_data2 = []
 
 onready var go = $Go
 onready var anim = $AnimationPlayer
@@ -14,8 +15,10 @@ onready var cards = $"Viewports/4cards/Cards"
 onready var next = $CanvasLayer/Next
 
 func _ready():
+	for i in range(1, 13):
+		cards_data2.append(load("res://cards/card" + str(i) + ".tres"))
 	for i in range(0, 4):
-		cards.set_data(i, cards_data[i].front_face, cards_data[i].text, cards_data[i].response)
+		cards.set_data(i, cards_data2[i].front_face, cards_data2[i].text, cards_data2[i].response)
 
 
 func _unhandled_input(event):
