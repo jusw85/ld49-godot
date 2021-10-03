@@ -4,6 +4,8 @@ extends Node2D
 enum State { PICKING, RESPONSE }
 var state = State.PICKING
 
+var rng = RandomNumberGenerator.new()
+
 var cards_data = []
 
 onready var go = $Go
@@ -14,10 +16,12 @@ onready var cards = $"Viewports/4cards/Cards"
 onready var next = $CanvasLayer/Next
 
 func _ready():
+	randomize()
+	rng.randomize()
 	for i in range(1, 13):
 		cards_data.append(load("res://cards/card" + str(i) + ".tres"))
-	for i in range(0, 4):
-		cards.set_data(i, cards_data[i].front_face, cards_data[i].text, cards_data[i].response)
+
+	rand_cards()
 
 
 func _unhandled_input(event):
@@ -25,6 +29,17 @@ func _unhandled_input(event):
 		_on_Next_pressed()
 	else:
 		viewport.unhandled_input(event)
+
+
+func rand_cards():
+	var arr = []
+	for i in range(0, cards_data.size()):
+		arr.append(i)
+
+	for i in range(0, 4):
+		arr.shuffle()
+		var idx = arr.pop_back()
+		cards.set_data(i, cards_data[idx].front_face, cards_data[idx].text, cards_data[idx].response)
 
 
 func _on_Go_pressed():
@@ -40,12 +55,7 @@ func _on_Go_pressed():
 	$"Control/Response".text = res
 
 	cards.reset()
-#	obj.cards[obj._selected_idx].slide(false, false)
-#	obj.cards[obj._selected_idx].is_slided = false
-#
-#	var vec = obj.cards[obj._selected_idx].get_node("Spatial").translation
-#	vec.y = 0
-#	obj.cards[obj._selected_idx].translation = vec
+	rand_cards()
 
 	state = State.RESPONSE
 
