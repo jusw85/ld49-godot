@@ -9,3 +9,4 @@ front_face = ExtResource( 2 )
 text = "Ramsey sharpens his knife"
 response = "Ramsey sharpens his knife, as he wants to teach Ham Solo a lesson for stealing his recipe to sell to Colonel Tenders. Just then, he bumped into Mr Goatse and questioned if he knows about his stolen recipe.
 \"Well, I... I don't know anything about it! I swear! Only a Pig can be so vile!\" said Mr Goatse, \"you know what, we should teach those pigs a lesson.\""
+prereq_cards = [ 26, 2, 34, 19, 4 ]

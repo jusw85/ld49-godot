@@ -11,3 +11,4 @@ response = "Mrs Bacon was enjoying the mud bath under the hot sun, when Billy Go
 Insulted, Mrs Bacon mocked at Billy, \"Who do you think you are! Do you know who I am? You work for me; I don't work for you.\"
 Enraged, Billy charges towards Mrs Bacon, and with the momentum his headbutt launches Mrs Bacon into the tree, snapping it into two.
 Cluck Norris is pleased with what he saw."
+prereq_cards = [ 21, 22, 17, 9, 28, 1, 23 ]

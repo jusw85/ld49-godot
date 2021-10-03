@@ -14,3 +14,4 @@ response = "After the incident at the barn, Harry Porker was convinced that Ms T
 \"Oh, no way I would pay for overpriced tea. I meant to offer you this lov.. I mean, 'health potion' that i just brewed. Would you like to drink it?\"
 Ms Teriyaki accepts his health potion.
 \"Just according to Keikaku\", thought Harry"
+prereq_cards = [ 21, 22, 17, 9, 28, 1 ]

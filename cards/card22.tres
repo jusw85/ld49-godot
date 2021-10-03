@@ -9,3 +9,4 @@ front_face = ExtResource( 2 )
 text = "Harry Porker sweeps the floor"
 response = "Dismayed by the food crumbs left on the floor again by the other pigs, Harry Porker went searching for a broom to clean up the mess. An old broom is found at the hay cart outside the barn door. Harry Porker picked up the broom and clutched it between his thighs, as he slipped on his gloves. Wiggly Pig who was nearby, saw him and hollered, \"Yer a wizard, Harry!\"
 With this relevation, Harry thought to himself, perhaps he should use magic and fly away on this broom from this miserable hell hole. He climbed to the loft of the barn and positions himself. With both hands grasping the shaft, he leaped off the loft window - only to crash landing into the hay cart below."
+prereq_cards = [ 21 ]

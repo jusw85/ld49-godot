@@ -10,3 +10,4 @@ text = "Mr Goatse has a tummy ache"
 response = "Mr Goatse was furious that he was not invited to the intellectual meeting organised by Professor Albert Eggstein. After the meeting ended, Mr Goatse approached Billy Goat and enquired about the meeting.
 \"I didn't understand anything Professor Albert said,\" Billy Goat replied, \"all I remembered from the meeting was that manure is a viable source of energy.\"
 Mr Goatse thought that is what intellectuals do, and went to the manure pile and start eating it... only to develop a tummy ache. Mr Goatse rushed to the outhouse."
+prereq_cards = [ 35, 10 ]

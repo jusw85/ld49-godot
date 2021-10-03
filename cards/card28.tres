@@ -9,3 +9,4 @@ front_face = ExtResource( 2 )
 text = "Nanny Goat goes to the gym"
 response = "Nanny Goat enjoys going to the gym classes conducted by Cluck Norris. The real reason why Nanny loves the gym, is because she can see her muscular gym instructor, Cluck Norris.
 Nanny Goat wants Cluck Norris to give her one-to-one private lessons at her home, but she needed her husband Billy to be away for a while. Nanny informed Billy to go to the hills and help her collect some edible mushrooms for dinner."
+prereq_cards = [ 17, 9 ]

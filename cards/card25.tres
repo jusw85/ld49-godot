@@ -11,3 +11,4 @@ response = "Billy Goat was tasked by his wife Nanny to climb the hills and look 
 As he was not a mushroom expert, he went ask Ham Solo for advice. 
 \"So you are looking for mushrooms, old Billy?\" asked Ham Solo, \"why don't you buy some of my mushrooms instead? I will let you have some for a good price!\"
 Relieved, Billy Goat traded with Ham Solo, not knowing he just bought psychedelic mushrooms. Billy consumed one of the mushrooms and had a spiritual awakening."
+prereq_cards = [ 17, 9, 28 ]
