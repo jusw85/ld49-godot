@@ -15,10 +15,11 @@ func _ready():
 		cards[i].connect("is_clicked", self, "_on_Card_is_clicked")
 
 
-func set_data(idx, texture, data, response):
+func set_data(idx, texture, data, response, card_idx):
 	cards[idx].set_face(texture, texture)
 	cards[idx].data = data
 	cards[idx].response = response
+	cards[idx].card_idx = card_idx
 
 
 func fade_all():

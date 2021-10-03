@@ -1,5 +1,6 @@
 extends Node2D
 
+signal lumber_changed(lumber)
 
 enum State { PICKING, RESPONSE }
 var state = State.PICKING
@@ -7,6 +8,8 @@ var state = State.PICKING
 var rng = RandomNumberGenerator.new()
 
 var cards_data = []
+var seen_cards = []
+var lumber = 0
 
 onready var go = $Go
 onready var anim = $AnimationPlayer
@@ -20,6 +23,7 @@ func _ready():
 	rng.randomize()
 	for i in range(1, 43):
 		cards_data.append(load("res://cards/card" + str(i) + ".tres"))
+		seen_cards.append(false)
 
 	rand_cards()
 
@@ -31,15 +35,29 @@ func _unhandled_input(event):
 		viewport.unhandled_input(event)
 
 
-func rand_cards():
+func get_available_cards():
 	var arr = []
 	for i in range(0, cards_data.size()):
-		arr.append(i)
+		var avail = true
+		for prereq in cards_data[i].prereq_cards:
+			if not seen_cards[prereq]:
+				avail = false
+				break
+		if avail:
+			arr.append(i)
+	return arr
+
+
+func rand_cards():
+#	var arr = []
+#	for i in range(0, cards_data.size()):
+#		arr.append(i)
+	var arr = get_available_cards()
 
 	for i in range(0, 4):
 		arr.shuffle()
 		var idx = arr.pop_back()
-		cards.set_data(i, cards_data[idx].front_face, cards_data[idx].text, cards_data[idx].response)
+		cards.set_data(i, cards_data[idx].front_face, cards_data[idx].text, cards_data[idx].response, idx)
 
 
 func _on_Go_pressed():
@@ -50,16 +68,24 @@ func _on_Go_pressed():
 	cards.fade_all()
 	yield(get_tree().create_timer(1.0), "timeout")
 
-	var obj = $"Viewports/4cards/Cards"
-	var res = obj.cards[obj._selected_idx].response
+	var res = cards.cards[cards._selected_idx].response
 	$"Control/Response".text = res
+
+	var idx = cards.cards[cards._selected_idx].card_idx
+	seen_cards[idx] = true
 
 	cards.reset()
 	rand_cards()
 
 	state = State.RESPONSE
 
+#	add_lumber(10)
 #	$"Viewports/1card/Card".fade(false)
+
+
+func add_lumber(amount):
+	lumber += amount
+	emit_signal("lumber_changed", amount)
 
 
 func _on_Cards_cards_selected(selected):

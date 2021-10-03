@@ -247,6 +247,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[connection signal="lumber_changed" from="." to="CanvasLayer/HUD" method="_on_Main_lumber_changed"]
 [connection signal="cards_selected" from="Viewports/4cards/Cards" to="." method="_on_Cards_cards_selected"]
 [connection signal="show_data" from="Viewports/4cards/Cards/CardsGroup/Card0" to="." method="_on_Card_show_data"]
 [connection signal="show_data" from="Viewports/4cards/Cards/CardsGroup/Card1" to="." method="_on_Card_show_data"]
