@@ -46,6 +46,14 @@ func slide(do_slide: bool, instant = false):
 			slide_anim.play_backwards("slide")
 
 
+func set_data(data, p_card_idx):
+	set_face(data.front_face, data.front_face)
+	self.data = data.text
+	response = data.response
+	card_idx = p_card_idx
+
+
+
 func set_face(front: Texture, back: Texture):
 	$Spatial/FrontFace.get_active_material(0).albedo_texture = front
 	$Spatial/BackFace.get_active_material(0).albedo_texture = back

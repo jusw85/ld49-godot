@@ -9,7 +9,7 @@ var rng = RandomNumberGenerator.new()
 
 var cards_data = []
 var seen_cards = []
-var lumber = 0
+var resources = []
 
 onready var go = $Go
 onready var anim = $AnimationPlayer
@@ -21,6 +21,8 @@ onready var next = $CanvasLayer/Next
 func _ready():
 	randomize()
 	rng.randomize()
+	for i in range(13):
+		resources.append(0)
 	for i in range(1, 43):
 		cards_data.append(load("res://cards/card" + str(i) + ".tres"))
 		seen_cards.append(false)
@@ -46,7 +48,7 @@ func get_available_cards():
 				break
 		if avail:
 			arr.append(i)
-	if lumber >= 10:
+	if resources[12] >= 10:
 		arr.append(99)
 	return arr
 
@@ -61,13 +63,13 @@ func rand_cards():
 		arr.shuffle()
 		var idx = arr.pop_back()
 		if idx == 99:
-			cards.set_data(0, cards_data[36].front_face, cards_data[36].text, cards_data[36].response, 36)
-			cards.set_data(1, cards_data[37].front_face, cards_data[37].text, cards_data[37].response, 37)
-			cards.set_data(2, cards_data[38].front_face, cards_data[38].text, cards_data[38].response, 38)
-			cards.set_data(3, cards_data[39].front_face, cards_data[39].text, cards_data[39].response, 39)
+			cards.set_data(0, cards_data[36], 36)
+			cards.set_data(1, cards_data[37], 37)
+			cards.set_data(2, cards_data[38], 38)
+			cards.set_data(3, cards_data[39], 39)
 			break
 		else:
-			cards.set_data(i, cards_data[idx].front_face, cards_data[idx].text, cards_data[idx].response, idx)
+			cards.set_data(i, cards_data[idx], idx)
 
 
 func _on_Go_pressed():
@@ -94,8 +96,8 @@ func _on_Go_pressed():
 
 
 func add_lumber(amount):
-	lumber += amount
-	emit_signal("lumber_changed", amount)
+	resources[12] += amount
+	emit_signal("lumber_changed", resources[12])
 
 
 func _on_Cards_cards_selected(selected):
