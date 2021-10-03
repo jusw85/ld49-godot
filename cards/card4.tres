@@ -5,6 +5,5 @@
 
 [resource]
 script = ExtResource( 1 )
-id = 0
 front_face = ExtResource( 2 )
 text = "Colonel Tenders barbeques some meat"

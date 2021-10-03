@@ -5,6 +5,8 @@ extends Node2D
 # var a = 2
 # var b = "text"
 
+export (Array, Resource) var cards_data
+
 onready var go = $Go
 onready var anim = $AnimationPlayer
 onready var anim2 = $"4cards/4cards/AnimationPlayer"
@@ -15,7 +17,8 @@ onready var next = $CanvasLayer/Next
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	for i in range(0, 4):
+		cards.set_data(i, cards_data[i].front_face, cards_data[i].text)
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

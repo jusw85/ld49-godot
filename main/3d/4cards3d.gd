@@ -2,14 +2,15 @@ extends Node
 
 signal cards_selected(selected)  # main
 
+export var texture: Texture
 var _num_selected = 0
 
-onready var cards = $CardsGroup
+onready var cards = $CardsGroup.get_children()
 #onready var selected = $SelectedCard
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	for card in cards.get_children():
+	for card in cards:
 		card.connect("card_selected", self, "_on_Card_card_selected")
 
 
@@ -25,16 +26,21 @@ func _unhandled_input(event):
 #		print(event.position)
 #		print(event.global_position)
 
+func set_data(idx, texture, data):
+	cards[idx].set_face(texture)
+	cards[idx].data = data
+
+
 func fade_all():
-	for card in cards.get_children():
+	for card in cards:
 		card.fade()
 
 func unfade_all():
-	for card in cards.get_children():
+	for card in cards:
 		card.unfade()
 
 func fade_unselected():
-	for card in cards.get_children():
+	for card in cards:
 		if not card.is_selected:
 			card.fade()
 
@@ -60,5 +66,5 @@ func _on_Card_card_selected(is_selected):
 
 
 func _lock_cards(is_lock):
-	for card in cards.get_children():
+	for card in cards:
 		card.can_select = not is_lock

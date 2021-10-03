@@ -4,6 +4,7 @@ signal card_selected(is_selected)  # cards
 
 var can_select = true
 var is_selected = false
+var data = ""
 
 onready var anim: AnimationPlayer = $AnimationPlayer
 onready var area: Area = $Spatial/Area
@@ -21,6 +22,11 @@ func fade():
 func unfade():
 	area.visible = true
 	anim.play_backwards("fade")
+
+
+func set_face(texture: Texture):
+	var mat = $Spatial/FrontFace.get_active_material(0)
+	mat.albedo_texture = texture
 
 
 func _on_Area_input_event(_camera, event, _click_position, _click_normal, _shape_idx):
