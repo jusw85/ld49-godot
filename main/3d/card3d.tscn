@@ -5,6 +5,7 @@
 [ext_resource path="res://main/3d/card3d.gd" type="Script" id=3]
 
 [sub_resource type="Animation" id=1]
+resource_name = "fade"
 length = 0.5
 step = 0.0166667
 tracks/0/type = "value"
@@ -101,10 +102,13 @@ extents = Vector3( 0.5, 0.844, 0.1 )
 [node name="Card" type="Spatial"]
 script = ExtResource( 3 )
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+[node name="SlideAnimationPlayer" type="AnimationPlayer" parent="."]
 anims/fade = SubResource( 1 )
 anims/flip = SubResource( 2 )
 anims/slide = SubResource( 3 )
+
+[node name="FadeAnimationPlayer" type="AnimationPlayer" parent="."]
+anims/fade = SubResource( 1 )
 
 [node name="Spatial" type="Spatial" parent="."]
 

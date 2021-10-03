@@ -30,7 +30,7 @@ func unfade_all():
 		card.fade(false)
 
 func reset():
-	cards[_selected_idx].slide(false, false)
+	cards[_selected_idx].slide(false, true)
 	_num_selected = 0
 	_selected = [false, false, false, false]
 

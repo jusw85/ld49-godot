@@ -11,7 +11,8 @@ var card_idx = 0
 var data = ""
 var response = ""
 
-onready var anim: AnimationPlayer = $AnimationPlayer
+onready var fade_anim: AnimationPlayer = $FadeAnimationPlayer
+onready var slide_anim: AnimationPlayer = $SlideAnimationPlayer
 onready var area: Area = $Spatial/Area
 
 # Called when the node enters the scene tree for the first time.
@@ -23,11 +24,11 @@ func fade(do_fade: bool):
 	if do_fade:
 		is_faded = true
 		area.visible = false
-		anim.play("fade")
+		fade_anim.play("fade")
 	else:
 		is_faded = false
 		area.visible = true
-		anim.play_backwards("fade")
+		fade_anim.play_backwards("fade")
 
 
 func slide(do_slide: bool, instant = false):
@@ -36,13 +37,13 @@ func slide(do_slide: bool, instant = false):
 		if instant:
 			$Spatial.translation = Vector3(0.0, 0.5, 0.0)
 		else:
-			anim.play("slide")
+			slide_anim.play("slide")
 	elif not do_slide and is_slided:
 		is_slided = false
 		if instant:
 			$Spatial.translation = Vector3.ZERO
 		else:
-			anim.play_backwards("slide")
+			slide_anim.play_backwards("slide")
 
 
 func set_face(front: Texture, back: Texture):
