@@ -34,24 +34,12 @@ tracks/0/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/1/type = "value"
-tracks/1/path = NodePath("CanvasLayer/Next:visible")
+tracks/1/path = NodePath("Mask:self_modulate")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"times": PoolRealArray( 0 ),
-"transitions": PoolRealArray( 1 ),
-"update": 1,
-"values": [ true ]
-}
-tracks/2/type = "value"
-tracks/2/path = NodePath("Mask:self_modulate")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/keys = {
 "times": PoolRealArray( 0, 0.500001 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 0,
@@ -173,6 +161,7 @@ anims/fade_out = SubResource( 2 )
 [node name="HUD" parent="CanvasLayer" instance=ExtResource( 7 )]
 
 [node name="Next" type="Button" parent="CanvasLayer"]
+visible = false
 self_modulate = Color( 1, 1, 1, 0 )
 margin_left = 458.287
 margin_top = 429.587

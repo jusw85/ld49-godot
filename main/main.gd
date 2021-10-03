@@ -1,9 +1,8 @@
 extends Node2D
 
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+enum State { PICKING, RESPONSE }
+var state = State.PICKING
 
 export (Array, Resource) var cards_data
 
@@ -21,6 +20,8 @@ func _ready():
 
 func _unhandled_input(event):
 	viewport.unhandled_input(event)
+	if state == State.RESPONSE and NC.EventUtils.is_lclick(event):
+		_on_Next_pressed()
 
 
 func _on_Go_pressed():
@@ -34,6 +35,9 @@ func _on_Go_pressed():
 	var obj = $"Viewports/4cards/Cards"
 	var res = obj.cards[obj._selected_idx].response
 	$"Control/Response".text = res
+
+	state = State.RESPONSE
+
 #	$"Viewports/1card/Card".fade(false)
 
 
@@ -43,11 +47,12 @@ func _on_Cards_cards_selected(selected):
 
 func _on_Next_pressed():
 	anim.play_backwards("fade_in")
-	next.visible = false
+#	next.visible = false
 	cards.unfade_all()
 	$"Control/Response".text = ""
+	state = State.PICKING
+
 #	$"Viewports/1card/Card".fade(true)
-#	cards.show_selected(false)
 
 
 func _on_Card_show_data(data):
