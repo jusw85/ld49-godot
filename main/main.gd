@@ -23,7 +23,7 @@ func _ready():
 	rng.randomize()
 	for _i in range(13):
 		resources.append(0)
-	for i in range(1, 43):
+	for i in range(43):
 		cards_data.append(load("res://cards/card" + str(i) + ".tres"))
 		seen_cards.append(false)
 
@@ -40,7 +40,7 @@ func _unhandled_input(event):
 func get_available_cards():
 	var arr = []
 #	for i in range(0, cards_data.size()):
-	for i in range(0, 36):
+	for i in range(1, 37):
 		var avail = true
 		for prereq in cards_data[i].prereq_cards:
 			if not seen_cards[prereq]:
@@ -60,13 +60,15 @@ func rand_cards():
 	var arr = get_available_cards()
 
 	for i in range(0, 4):
+#		print(arr)
 		arr.shuffle()
+#		print(arr)
 		var idx = arr.pop_back()
 		if idx == 99:
-			cards.set_data(0, cards_data[36], 36)
-			cards.set_data(1, cards_data[37], 37)
-			cards.set_data(2, cards_data[38], 38)
-			cards.set_data(3, cards_data[39], 39)
+			cards.set_data(0, cards_data[37], 37)
+			cards.set_data(1, cards_data[38], 38)
+			cards.set_data(2, cards_data[39], 39)
+			cards.set_data(3, cards_data[40], 40)
 			break
 		else:
 			cards.set_data(i, cards_data[idx], idx)
