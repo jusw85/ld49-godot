@@ -1,0 +1,12 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://cards/carddialog.gd" type="Script" id=1]
+[ext_resource path="res://cards/card_actual/empty.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+front_face = ExtResource( 2 )
+text = "Instruct the goats to construct the stables"
+response = "10 lumber is consumed for the construction of the stable.
+The chickens and the pigs are happy with the progress of the stables
+The goats are unhappy being tasked to do more work"

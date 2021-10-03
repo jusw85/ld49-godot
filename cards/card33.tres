@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://cards/carddialog.gd" type="Script" id=1]
+[ext_resource path="res://cards/card_actual/empty.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+front_face = ExtResource( 2 )
+text = "Mr Goatse surfs the internet"
+response = "Mr Goatse recalled during last night's drinks with Ham Solo, he was advised to 'never google your own name\". Intrigued, Mr Goatse decides to google his own name. Mr Goatse was shocked by what he saw. Ham Solo thought it was funny."

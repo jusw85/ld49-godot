@@ -18,7 +18,7 @@ onready var next = $CanvasLayer/Next
 func _ready():
 	randomize()
 	rng.randomize()
-	for i in range(1, 13):
+	for i in range(1, 43):
 		cards_data.append(load("res://cards/card" + str(i) + ".tres"))
 
 	rand_cards()

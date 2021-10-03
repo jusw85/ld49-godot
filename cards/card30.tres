@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://cards/carddialog.gd" type="Script" id=1]
+[ext_resource path="res://cards/card_actual/empty.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+front_face = ExtResource( 2 )
+text = "Nanny Goat shares a joke"
+response = "Nanny Goat shared a joke with Cluck Norris. \"Apparently, Goatse ate the manure thinking it was a source of energy!\"  laughed Nanny Goat. Cluck Norris thought it was funny, only for the first time. Bily didn't like it."

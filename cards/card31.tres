@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://cards/carddialog.gd" type="Script" id=1]
+[ext_resource path="res://cards/card_actual/empty.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+front_face = ExtResource( 2 )
+text = "Mr Goatse goes to the mall"
+response = "Mr Goatse went to mall looking for 'Lion's meat' as he believed, eating the meat of the apex predator will make him strong. The butcher misheard and gave him pig's loin instead."

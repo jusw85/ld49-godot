@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://cards/carddialog.gd" type="Script" id=1]
+[ext_resource path="res://cards/card_actual/empty.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+front_face = ExtResource( 2 )
+text = "Ham Solo water the plants"
+response = "Ham Solo was watering the plants, when he saw old Billy Goat chasing after little Wiggly Pig, who was clearly upset and in tears. Ham solo knew about what Billy did to Mrs Bacon, and assumed that Wiggly is under attack as well. Ham Solo decides to take matters to his own hands, recalling what he said to Colonel Tenders earlier. Ham solo draws his revolver from the holster and took aim at Billy Goat, ready to fire. Out of nowhere, Ramsey appears and wrestled him to the ground, but the shot has already rang out, triggering Colonel Tender's PTSD."
