@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Einstein_Equation.png-f8ecfda34ffc07b1c9ecfa8f7815aac0.stex"
+path="res://.import/Teriyaki_Manga.png-6a0726be8b9ead6cdec372cad6e80735.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://main/assets/card_actual/Einstein_Equation.png"
-dest_files=[ "res://.import/Einstein_Equation.png-f8ecfda34ffc07b1c9ecfa8f7815aac0.stex" ]
+source_file="res://cards/card_actual/Teriyaki_Manga.png"
+dest_files=[ "res://.import/Teriyaki_Manga.png-6a0726be8b9ead6cdec372cad6e80735.stex" ]
 
 [params]
 

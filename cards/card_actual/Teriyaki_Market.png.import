@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Colonel_Mail.png-f429f17ac274888864701b6e1e8a18b4.stex"
+path="res://.import/Teriyaki_Market.png-fc22561e33c09688d2a4f4c434972660.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://main/assets/card_actual/Colonel_Mail.png"
-dest_files=[ "res://.import/Colonel_Mail.png-f429f17ac274888864701b6e1e8a18b4.stex" ]
+source_file="res://cards/card_actual/Teriyaki_Market.png"
+dest_files=[ "res://.import/Teriyaki_Market.png-fc22561e33c09688d2a4f4c434972660.stex" ]
 
 [params]
 

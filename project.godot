@@ -9,12 +9,18 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Resource",
+"class": "CardDialog",
+"language": "GDScript",
+"path": "res://cards/carddialog.gd"
+}, {
 "base": "Reference",
 "class": "NC",
 "language": "GDScript",
 "path": "res://common/namespace.gd"
 } ]
 _global_script_class_icons={
+"CardDialog": "",
 "NC": ""
 }
 

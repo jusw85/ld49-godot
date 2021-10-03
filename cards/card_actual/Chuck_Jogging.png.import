@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Chuck_Jogging.png-47fb7f5628b7f0177b47611f9dcfddb0.stex"
+path="res://.import/Chuck_Jogging.png-e0b56e962b25fd354f66f17081b7f5fe.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://main/assets/card_actual/Chuck_Jogging.png"
-dest_files=[ "res://.import/Chuck_Jogging.png-47fb7f5628b7f0177b47611f9dcfddb0.stex" ]
+source_file="res://cards/card_actual/Chuck_Jogging.png"
+dest_files=[ "res://.import/Chuck_Jogging.png-e0b56e962b25fd354f66f17081b7f5fe.stex" ]
 
 [params]
 

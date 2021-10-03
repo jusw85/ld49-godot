@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Einstein_Physics.png-485cbbba08bfe8ca8089db1e1f25ea5c.stex"
+path="res://.import/Einstein_Woods.png-085582833dd909354244cbc36325b200.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://main/assets/card_actual/Einstein_Physics.png"
-dest_files=[ "res://.import/Einstein_Physics.png-485cbbba08bfe8ca8089db1e1f25ea5c.stex" ]
+source_file="res://cards/card_actual/Einstein_Woods.png"
+dest_files=[ "res://.import/Einstein_Woods.png-085582833dd909354244cbc36325b200.stex" ]
 
 [params]
 

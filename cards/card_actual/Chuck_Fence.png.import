@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Chuck_Fence.png-b28b11b2305d07de0b5b1aef80894389.stex"
+path="res://.import/Chuck_Fence.png-ea68c9812d5a5a8c0a8331f174dec38b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://main/assets/card_actual/Chuck_Fence.png"
-dest_files=[ "res://.import/Chuck_Fence.png-b28b11b2305d07de0b5b1aef80894389.stex" ]
+source_file="res://cards/card_actual/Chuck_Fence.png"
+dest_files=[ "res://.import/Chuck_Fence.png-ea68c9812d5a5a8c0a8331f174dec38b.stex" ]
 
 [params]
 

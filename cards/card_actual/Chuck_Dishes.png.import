@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Einstein_Woods.png-25021ab254afb5f9b3f6bcc135fd3061.stex"
+path="res://.import/Chuck_Dishes.png-7a6f70ddafaa9a9729a0363aba25f7bd.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://main/assets/card_actual/Einstein_Woods.png"
-dest_files=[ "res://.import/Einstein_Woods.png-25021ab254afb5f9b3f6bcc135fd3061.stex" ]
+source_file="res://cards/card_actual/Chuck_Dishes.png"
+dest_files=[ "res://.import/Chuck_Dishes.png-7a6f70ddafaa9a9729a0363aba25f7bd.stex" ]
 
 [params]
 

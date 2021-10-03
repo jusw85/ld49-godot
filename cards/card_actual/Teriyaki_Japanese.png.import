@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Teriyaki_Market.png-70341223f8700412afb0f13328b6552c.stex"
+path="res://.import/Teriyaki_Japanese.png-5ab1c49f7d2b2434ac11f8d0f019cc1f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://main/assets/card_actual/Teriyaki_Market.png"
-dest_files=[ "res://.import/Teriyaki_Market.png-70341223f8700412afb0f13328b6552c.stex" ]
+source_file="res://cards/card_actual/Teriyaki_Japanese.png"
+dest_files=[ "res://.import/Teriyaki_Japanese.png-5ab1c49f7d2b2434ac11f8d0f019cc1f.stex" ]
 
 [params]
 

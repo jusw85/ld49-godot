@@ -32,7 +32,7 @@ func _on_Go_pressed():
 	go.visible = false
 	cards.fade_all()
 	yield(get_tree().create_timer(1.0), "timeout")
-	$Viewport/Card.fade(true)
+	$Viewport/Card.fade(false)
 #	anim2.play("fade_out")
 #	cards.fade_unselected()
 #	cards.show_selected(true)
@@ -46,5 +46,5 @@ func _on_Next_pressed():
 	anim.play_backwards("fade_in")
 	next.visible = false
 	cards.unfade_all()
-	$Viewport/Card.fade(false)
+	$Viewport/Card.fade(true)
 #	cards.show_selected(false)

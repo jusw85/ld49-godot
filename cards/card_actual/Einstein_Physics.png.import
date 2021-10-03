@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Chuck_Dishes.png-b3848dc811b2ad2cb0f0e996ef17a63e.stex"
+path="res://.import/Einstein_Physics.png-2d4fb24f53a6d2b2c5521d255e6d185f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://main/assets/card_actual/Chuck_Dishes.png"
-dest_files=[ "res://.import/Chuck_Dishes.png-b3848dc811b2ad2cb0f0e996ef17a63e.stex" ]
+source_file="res://cards/card_actual/Einstein_Physics.png"
+dest_files=[ "res://.import/Einstein_Physics.png-2d4fb24f53a6d2b2c5521d255e6d185f.stex" ]
 
 [params]
 
