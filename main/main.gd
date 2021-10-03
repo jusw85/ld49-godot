@@ -37,7 +37,8 @@ func _unhandled_input(event):
 
 func get_available_cards():
 	var arr = []
-	for i in range(0, cards_data.size()):
+#	for i in range(0, cards_data.size()):
+	for i in range(0, 36):
 		var avail = true
 		for prereq in cards_data[i].prereq_cards:
 			if not seen_cards[prereq]:
@@ -45,6 +46,8 @@ func get_available_cards():
 				break
 		if avail:
 			arr.append(i)
+	if lumber >= 10:
+		arr.append(99)
 	return arr
 
 
@@ -57,7 +60,14 @@ func rand_cards():
 	for i in range(0, 4):
 		arr.shuffle()
 		var idx = arr.pop_back()
-		cards.set_data(i, cards_data[idx].front_face, cards_data[idx].text, cards_data[idx].response, idx)
+		if idx == 99:
+			cards.set_data(0, cards_data[36].front_face, cards_data[36].text, cards_data[36].response, idx)
+			cards.set_data(1, cards_data[37].front_face, cards_data[37].text, cards_data[37].response, idx)
+			cards.set_data(2, cards_data[38].front_face, cards_data[38].text, cards_data[38].response, idx)
+			cards.set_data(3, cards_data[39].front_face, cards_data[39].text, cards_data[39].response, idx)
+			break
+		else:
+			cards.set_data(i, cards_data[idx].front_face, cards_data[idx].text, cards_data[idx].response, idx)
 
 
 func _on_Go_pressed():
