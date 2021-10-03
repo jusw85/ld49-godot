@@ -10,3 +10,4 @@ text = "Colonel Tenders collects his mail"
 response = "While Colonel Tenders was collecting his mail, he found a slip of paper with a hand written note stashed into his letterbox. After reading the contents in the paper, he crushed it in disgust and tossed the paper out immediately. Ham Solo picked up the paper, and questioned Colonel Tenders on why he did not like the recipe of 11 herbs and spices.
 Meanwhile, Chef Ramsey was looking for his lost recipe, when he saw the commotion between Ham Solo and Colonel Tenders.
 \"So Ham Solo is trying to sell my secret recipe to my rival? Presposterous!\" muttered Ramsey."
+resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]

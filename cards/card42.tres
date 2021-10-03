@@ -8,3 +8,4 @@ script = ExtResource( 1 )
 front_face = ExtResource( 2 )
 text = "Gym day"
 response = "The ladies enjoy gym day"
+resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]

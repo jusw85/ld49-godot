@@ -15,3 +15,4 @@ response = "After the incident at the barn, Harry Porker was convinced that Ms T
 Ms Teriyaki accepts his health potion.
 \"Just according to Keikaku\", thought Harry"
 prereq_cards = [ 21, 22, 17, 9, 28, 1 ]
+resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]

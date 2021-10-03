@@ -11,3 +11,4 @@ response = "10 lumber is consumed for the construction of the stable.
 The pigs and the goats are happy with the progress of the stables
 The chickens are unhappy being tasked to do more work"
 prereq_cards = [  ]
+resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]

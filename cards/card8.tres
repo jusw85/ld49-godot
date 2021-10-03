@@ -9,3 +9,4 @@ front_face = ExtResource( 2 )
 text = "Albert Eggstein discusses physics"
 response = "Professor Albert Eggstein pondered the issue of labour shortage due to the horses leaving the farm. \"While we could bring back the horses to solve the labour issue, this is not a long term solution to our society,\" thought the professor. Just then, he saw a kite flying in the distance, and had a good idea. He gathered the intellectuals of the farm, sharing with them his bold idea - to build a windmill to harness wind energy to power the horse mill, instead of relying on horses.
 Nanny Goat and Harry Porker had a good laugh, exclaiming on the absurdity of the proposal. \"Wait till he tells us that manure is a viable source of energy\", Nanny chuckled. Billy was confused."
+resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10 ]

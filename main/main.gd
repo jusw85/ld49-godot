@@ -61,10 +61,10 @@ func rand_cards():
 		arr.shuffle()
 		var idx = arr.pop_back()
 		if idx == 99:
-			cards.set_data(0, cards_data[36].front_face, cards_data[36].text, cards_data[36].response, idx)
-			cards.set_data(1, cards_data[37].front_face, cards_data[37].text, cards_data[37].response, idx)
-			cards.set_data(2, cards_data[38].front_face, cards_data[38].text, cards_data[38].response, idx)
-			cards.set_data(3, cards_data[39].front_face, cards_data[39].text, cards_data[39].response, idx)
+			cards.set_data(0, cards_data[36].front_face, cards_data[36].text, cards_data[36].response, 36)
+			cards.set_data(1, cards_data[37].front_face, cards_data[37].text, cards_data[37].response, 37)
+			cards.set_data(2, cards_data[38].front_face, cards_data[38].text, cards_data[38].response, 38)
+			cards.set_data(3, cards_data[39].front_face, cards_data[39].text, cards_data[39].response, 39)
 			break
 		else:
 			cards.set_data(i, cards_data[idx].front_face, cards_data[idx].text, cards_data[idx].response, idx)

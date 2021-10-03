@@ -8,3 +8,4 @@ script = ExtResource( 1 )
 front_face = ExtResource( 2 )
 text = "Harry Porker reads a magazine"
 response = "Harry Porker frequently enjoys reading men's magazine at the outhouse."
+resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]

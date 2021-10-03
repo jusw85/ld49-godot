@@ -10,3 +10,4 @@ text = "Ramsey goes to the kitchen"
 response = "Ramsey was not pleased with the recipe he had, which already contains 10 herbs and spices. \"It is just missing one more ingredient, a pronounced spice flavour to balance oily flavour of the meat,\" thought Ramsey.
 Just then, Chef Ramsey saw Ms Teriyaki return from the market. Chef Ramsey approached Ms Teriyaki. \"Hello Miss Teriyaki, I would like your advice on a recipe I am working on,\" asked Ramsey. \"In Japan, we use wasabi for all our meals. It has a strong and pungent aroma!\" Delighted, Chef Ramsey quickly jotted down the 11th ingredient into the slip of paper, his secret recipe for fried chicken."
 prereq_cards = [ 2 ]
+resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
