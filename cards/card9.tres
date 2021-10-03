@@ -1,12 +1,13 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://cards/carddialog.gd" type="Script" id=1]
-[ext_resource path="res://cards/card_actual/Einstein_Woods.png" type="Texture" id=2]
+[ext_resource path="res://cards/card_actual/Chuck_Jogging.png" type="Texture" id=2]
 
 [resource]
 script = ExtResource( 1 )
 front_face = ExtResource( 2 )
-text = "Albert Eggstein goes to the woods"
-response = "Professor Albert Eggstein went to the woods and took note the low amount of food supplies available. When resources are scarce, there will be conflict. Albert is concerned."
-prereq_cards = [ 17 ]
+text = "Cluck Norris jogs in the park"
+response = "Cluck Norris was jogging around the farm as usual, when he saw Wiggly Pig thrusting her hips. \"What kind of exercise is that?\" asked Cluck Norris.
+\"It's called twerking, and everyone's doing it!\" replied Wiggly Pig, as she continues her dance.
+Cluck Norris is inspired, and thought that this is a good workout to train the farm animals to be physically fit. Cluck Norris invited everyone to join his gym class."
 resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]

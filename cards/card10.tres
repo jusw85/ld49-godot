@@ -1,16 +1,12 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://cards/carddialog.gd" type="Script" id=1]
-[ext_resource path="res://cards/card_actual/Teriyaki_Japanese.png" type="Texture" id=2]
+[ext_resource path="res://cards/card_actual/Einstein_Physics.png" type="Texture" id=2]
 
 [resource]
 script = ExtResource( 1 )
 front_face = ExtResource( 2 )
-text = "Ms Teriyaki learns japanese"
-response = "Ms Teriyaki was reading her japanese text when she heard a loud crash outside the barn. She rushed out and saw a badly bruised Harry porker on top of a broken cart.
-\"Omae Wa Mou Shindeiru!\" exclaimed Ms Teriyaki.
-\"NANI?!\" reacted Harry instinctively, as a typical weeb response.
-Meanwhile, Cluck Norris who was having his private gym lessons at Nanny Goat's house, heard the loud cry. He mistakenly believed it was Billy Goat's voice, returning from the hills, shouting his wife's name.
-Not wanting to be discovered, Cluck Norris roundhouse kicked the front door and fled. In fear, Nanny Goat escaped through the back door."
-prereq_cards = [ 35 ]
-resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+text = "Albert Eggstein discusses physics"
+response = "Professor Albert Eggstein pondered the issue of labour shortage due to the horses leaving the farm. \"While we could bring back the horses to solve the labour issue, this is not a long term solution to our society,\" thought the professor. Just then, he saw a kite flying in the distance, and had a good idea. He gathered the intellectuals of the farm, sharing with them his bold idea - to build a windmill to harness wind energy to power the horse mill, instead of relying on horses.
+Nanny Goat and Harry Porker had a good laugh, exclaiming on the absurdity of the proposal. \"Wait till he tells us that manure is a viable source of energy\", Nanny chuckled. Billy was confused."
+resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10 ]

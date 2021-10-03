@@ -1,16 +1,12 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://cards/carddialog.gd" type="Script" id=1]
-[ext_resource path="res://cards/card_actual/Wiggly_buttocks.png" type="Texture" id=2]
+[ext_resource path="res://cards/card_actual/Wiggly_School.png" type="Texture" id=2]
 
 [resource]
 script = ExtResource( 1 )
 front_face = ExtResource( 2 )
-text = "Wiggly Pig shakes her buttocks"
-response = "Wiggly was watching trending videos on social media via her mobile device, when she discovered a popular dance called 'twerking'. Excitedly, she started practicing her 'twerking' moves behind the barn.
-Nanny Goat muttered to herself, \"Girls these days have no sense of propriety!\"
-Ham Solo is pleased with what he saw.
-Mr Goatse is pleased with what he saw.
-Cluck Norris is pleased with what he saw."
-prereq_cards = [ 27, 17, 9, 28, 25, 13 ]
+text = "Wiggly Pig goes to school"
+response = "Wiggly was walking to school when she saw Billy Goat approached him. Wiggly was still upset at Billy.
+Billy goat, who was under the effects of the magic mushrooms, expressed deep regret to his pasts actions and hurried over to Wiggly to apologised to her. Wiggly, thinking that Billy is charging at her, feared for her life and ran towards home to find Mrs Bacon."
 resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]

@@ -1,17 +1,12 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://cards/carddialog.gd" type="Script" id=1]
-[ext_resource path="res://cards/card_actual/Bacon_Sing.png" type="Texture" id=2]
+[ext_resource path="res://cards/card_actual/Bacon_Dig.png" type="Texture" id=2]
 
 [resource]
 script = ExtResource( 1 )
 front_face = ExtResource( 2 )
-text = "Mrs Bacon sings a song"
-response = "Mrs Bacon had trouble singing the high notes as usual, feeling that her throat has been sore.
-\"If only there is something to drink that could soothe my throat,\" muttered Mrs Bacon.
-Ms Teriyaki who was just left Harry Porker's house, was holding on to the health potion given to her. 
-\"I happened to overhear you, Mrs Bacon. Would you like to drink this health potion brewed by Harry Potter?\" asked Ms Teriyaki.
-\"That will be perfect!,\" thanked Mrs Bacon as she gulped down the drink. The love potion starts to take effect, that will make her fall in love with the first man she sees.
-At this moment, a dazed and confused Billy Goat came by, and all the hatred they had for each other was momentarily gone."
-prereq_cards = [ 27, 13 ]
-resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+text = "Mrs Bacon digs a hole"
+response = "Furious by Billy's action, Mrs Bacon seeks revenge and plans a trap. Mrs Bacon dug a hole in her backyard, and covered the top with branches and leaves to conceal the opening. When Billy comes by again, Mrs Bacon's plan was to taunt Billy and intentionally make him charge at her, directly leading him into the trap that she laid."
+prereq_cards = [ 27 ]
+resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10 ]

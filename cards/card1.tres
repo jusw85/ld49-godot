@@ -1,12 +1,16 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://cards/carddialog.gd" type="Script" id=1]
-[ext_resource path="res://cards/card_actual/Chuck_Dishes.png" type="Texture" id=2]
+[ext_resource path="res://cards/card_actual/Teriyaki_Japanese.png" type="Texture" id=2]
 
 [resource]
 script = ExtResource( 1 )
 front_face = ExtResource( 2 )
-text = "Cluck Norris does the dishes"
-response = "Cluck Norris hates washing the dishes as it will get all his feathers wet. Fortunately for him, Nanny Goat always offer to help him wash the dishes when she is around. "
-prereq_cards = [ 21, 22, 17, 9, 28 ]
-resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10 ]
+text = "Ms Teriyaki learns japanese"
+response = "Ms Teriyaki was reading her japanese text when she heard a loud crash outside the barn. She rushed out and saw a badly bruised Harry porker on top of a broken cart.
+\"Omae Wa Mou Shindeiru!\" exclaimed Ms Teriyaki.
+\"NANI?!\" reacted Harry instinctively, as a typical weeb response.
+Meanwhile, Cluck Norris who was having his private gym lessons at Nanny Goat's house, heard the loud cry. He mistakenly believed it was Billy Goat's voice, returning from the hills, shouting his wife's name.
+Not wanting to be discovered, Cluck Norris roundhouse kicked the front door and fled. In fear, Nanny Goat escaped through the back door."
+prereq_cards = [ 35 ]
+resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]

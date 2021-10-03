@@ -1,15 +1,12 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://cards/carddialog.gd" type="Script" id=1]
-[ext_resource path="res://cards/card_actual/Colonel_Stretch.png" type="Texture" id=2]
+[ext_resource path="res://cards/card_actual/Colonel_BBQ.png" type="Texture" id=2]
 
 [resource]
 script = ExtResource( 1 )
 front_face = ExtResource( 2 )
-text = "Colonel Tenders stretches his wings"
-response = "Colonel Tenders stretches his wings, sore after a day's hard work. Old memories start flooding back, reminding him of the brutalities of war, with flashbacks of his comrades savagely disintergrated under the cries of falling artillery.
-Colonel Tenders goes to the bar for a drink, and saw Ham Solo at the counter as usual. \"How do you cope the horrors of war, Solo?\" asked Colonel Tenders.
-\"When confronted with an enemy, I always shoot first - better alive than dead, I'd say!\" replied Ham Solo. 
-Colonel Tenders felt much better after that"
-prereq_cards = [ 2, 34, 19, 26, 4, 36 ]
+text = "Colonel Tenders barbeques some meat"
+response = "Colonel Tenders was staring into the distance, when his neighbour Mr Goatse called out to him. \"Hey Sir, would you like to have some meat?\" asked Mr Goatse. Colonel Tenders, who used to be a chef, replied \"Well, I am an expert on grilled meat.\" Colonel Tenders start grilling the meat, and before long, the aroma of the barbequed meat permeates every corner of the farm. The pigs were salivating as they quickly arrived to get a taste of Colonel Tenders' special BBQ meat. The pigs quickly gorged into the grilled meat, without knowing what they were eating. Ramsey and Goatse was watching."
+prereq_cards = [ 2, 34, 19 ]
 resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]

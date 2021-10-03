@@ -1,15 +1,12 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://cards/carddialog.gd" type="Script" id=1]
-[ext_resource path="res://cards/card_actual/Chuck_Fence.png" type="Texture" id=2]
+[ext_resource path="res://cards/card_actual/Teriyaki_Market.png" type="Texture" id=2]
 
 [resource]
 script = ExtResource( 1 )
 front_face = ExtResource( 2 )
-text = "Cluck Norris repairs the fence"
-response = "Cluck Norris noticed that the perimeter fence was partially damaged. \"If this is not repaired, then the wolves could easily enter the farm. The weak and vulnerable will be at risk\", thought Cluck Norris. After some time considering, Cluck Norris thought it wasn't a bad idea, and proceed to roundhouse kick the fence, destroying them.
-Albert Eggstein is displeased.
-Billy Goat is displeased.
-Wiggly Pig is displeased.
-Nanny Goat is pleased."
-resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10 ]
+text = "Ms Teriyaki goes to the market"
+response = "As Ms Teriyaki walked through the farmer's market, she saw all her dead brethen hanging at the stalls. \"My goodness!\" cried out Ms Teriyaki. She was clearly traumatised by what she saw and hurried back to the farm, after purchasing the essential supplies for the farm."
+prereq_cards = [ 21, 22, 17, 9, 28, 1, 8, 26, 2, 34, 19, 4, 36, 6, 31, 23, 14 ]
+resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]

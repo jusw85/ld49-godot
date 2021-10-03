@@ -1,13 +1,11 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://cards/carddialog.gd" type="Script" id=1]
-[ext_resource path="res://cards/card_actual/Chuck_Jogging.png" type="Texture" id=2]
+[ext_resource path="res://cards/card_actual/Teriyaki_Manga.png" type="Texture" id=2]
 
 [resource]
 script = ExtResource( 1 )
 front_face = ExtResource( 2 )
-text = "Cluck Norris jogs in the park"
-response = "Cluck Norris was jogging around the farm as usual, when he saw Wiggly Pig thrusting her hips. \"What kind of exercise is that?\" asked Cluck Norris.
-\"It's called twerking, and everyone's doing it!\" replied Wiggly Pig, as she continues her dance.
-Cluck Norris is inspired, and thought that this is a good workout to train the farm animals to be physically fit. Cluck Norris invited everyone to join his gym class."
+text = "Ms Teriyaki reads manga"
+response = "Ms Teriyaki brought out her Manga, a japanese stylised comic book which she bought while she was travelling in Japan. As she has a basic command of the language, she was barely able to read the japanese characters within the speech bubbles. With Google Translate, she agonizingly deciphers each japanese sentence in english. Unfortunately for her, she did not know that the manga is read from right to left. "
 resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]

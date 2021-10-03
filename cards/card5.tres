@@ -1,13 +1,15 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://cards/carddialog.gd" type="Script" id=1]
-[ext_resource path="res://cards/card_actual/Colonel_Mail.png" type="Texture" id=2]
+[ext_resource path="res://cards/card_actual/Colonel_Stretch.png" type="Texture" id=2]
 
 [resource]
 script = ExtResource( 1 )
 front_face = ExtResource( 2 )
-text = "Colonel Tenders collects his mail"
-response = "While Colonel Tenders was collecting his mail, he found a slip of paper with a hand written note stashed into his letterbox. After reading the contents in the paper, he crushed it in disgust and tossed the paper out immediately. Ham Solo picked up the paper, and questioned Colonel Tenders on why he did not like the recipe of 11 herbs and spices.
-Meanwhile, Chef Ramsey was looking for his lost recipe, when he saw the commotion between Ham Solo and Colonel Tenders.
-\"So Ham Solo is trying to sell my secret recipe to my rival? Presposterous!\" muttered Ramsey."
+text = "Colonel Tenders stretches his wings"
+response = "Colonel Tenders stretches his wings, sore after a day's hard work. Old memories start flooding back, reminding him of the brutalities of war, with flashbacks of his comrades savagely disintergrated under the cries of falling artillery.
+Colonel Tenders goes to the bar for a drink, and saw Ham Solo at the counter as usual. \"How do you cope the horrors of war, Solo?\" asked Colonel Tenders.
+\"When confronted with an enemy, I always shoot first - better alive than dead, I'd say!\" replied Ham Solo. 
+Colonel Tenders felt much better after that"
+prereq_cards = [ 2, 34, 19, 26, 4, 36 ]
 resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]

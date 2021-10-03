@@ -1,12 +1,13 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://cards/carddialog.gd" type="Script" id=1]
-[ext_resource path="res://cards/card_actual/Colonel_BBQ.png" type="Texture" id=2]
+[ext_resource path="res://cards/card_actual/Colonel_Mail.png" type="Texture" id=2]
 
 [resource]
 script = ExtResource( 1 )
 front_face = ExtResource( 2 )
-text = "Colonel Tenders barbeques some meat"
-response = "Colonel Tenders was staring into the distance, when his neighbour Mr Goatse called out to him. \"Hey Sir, would you like to have some meat?\" asked Mr Goatse. Colonel Tenders, who used to be a chef, replied \"Well, I am an expert on grilled meat.\" Colonel Tenders start grilling the meat, and before long, the aroma of the barbequed meat permeates every corner of the farm. The pigs were salivating as they quickly arrived to get a taste of Colonel Tenders' special BBQ meat. The pigs quickly gorged into the grilled meat, without knowing what they were eating. Ramsey and Goatse was watching."
-prereq_cards = [ 2, 34, 19 ]
+text = "Colonel Tenders collects his mail"
+response = "While Colonel Tenders was collecting his mail, he found a slip of paper with a hand written note stashed into his letterbox. After reading the contents in the paper, he crushed it in disgust and tossed the paper out immediately. Ham Solo picked up the paper, and questioned Colonel Tenders on why he did not like the recipe of 11 herbs and spices.
+Meanwhile, Chef Ramsey was looking for his lost recipe, when he saw the commotion between Ham Solo and Colonel Tenders.
+\"So Ham Solo is trying to sell my secret recipe to my rival? Presposterous!\" muttered Ramsey."
 resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]

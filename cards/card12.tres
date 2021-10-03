@@ -1,11 +1,12 @@
 [gd_resource type="Resource" load_steps=3 format=2]
 
 [ext_resource path="res://cards/carddialog.gd" type="Script" id=1]
-[ext_resource path="res://cards/card_actual/Teriyaki_Manga.png" type="Texture" id=2]
+[ext_resource path="res://cards/card_actual/Einstein_Woods.png" type="Texture" id=2]
 
 [resource]
 script = ExtResource( 1 )
 front_face = ExtResource( 2 )
-text = "Ms Teriyaki reads manga"
-response = "Ms Teriyaki brought out her Manga, a japanese stylised comic book which she bought while she was travelling in Japan. As she has a basic command of the language, she was barely able to read the japanese characters within the speech bubbles. With Google Translate, she agonizingly deciphers each japanese sentence in english. Unfortunately for her, she did not know that the manga is read from right to left. "
+text = "Albert Eggstein goes to the woods"
+response = "Professor Albert Eggstein went to the woods and took note the low amount of food supplies available. When resources are scarce, there will be conflict. Albert is concerned."
+prereq_cards = [ 17 ]
 resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
