@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=3 format=2]
+
+[ext_resource path="res://cards/carddialog.gd" type="Script" id=1]
+[ext_resource path="res://cards/card_actual/Bacon_Dig.png" type="Texture" id=2]
+
+[resource]
+script = ExtResource( 1 )
+front_face = ExtResource( 2 )
+text = "Mrs Bacon digs a hole"
+response = "Furious by Billy's action, Mrs Bacon seeks revenge and plans a trap. Mrs Bacon dug a hole in her backyard, and covered the top with branches and leaves to conceal the opening. When Billy comes by again, Mrs Bacon's plan was to taunt Billy and intentionally make him charge at her, directly leading him into the trap that she laid."

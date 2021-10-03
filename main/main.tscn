@@ -1,8 +1,9 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://common/quit_on_action.gd" type="Script" id=1]
 [ext_resource path="res://common/audio_fader.tscn" type="PackedScene" id=2]
 [ext_resource path="res://font_data.tres" type="DynamicFontData" id=3]
+[ext_resource path="res://main/assets/bgm.ogg" type="AudioStream" id=4]
 [ext_resource path="res://main/bgm.gd" type="Script" id=5]
 [ext_resource path="res://gui/hud.tscn" type="PackedScene" id=7]
 [ext_resource path="res://font.tres" type="DynamicFont" id=9]
@@ -142,6 +143,8 @@ physics_object_picking = true
 script = ExtResource( 1 )
 
 [node name="Bgm" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+autoplay = true
 script = ExtResource( 5 )
 
 [node name="AudioFader" parent="Bgm" instance=ExtResource( 2 )]
