@@ -4,8 +4,7 @@ extends Node2D
 enum State { PICKING, RESPONSE }
 var state = State.PICKING
 
-export (Array, Resource) var cards_data
-var cards_data2 = []
+var cards_data = []
 
 onready var go = $Go
 onready var anim = $AnimationPlayer
@@ -16,15 +15,16 @@ onready var next = $CanvasLayer/Next
 
 func _ready():
 	for i in range(1, 13):
-		cards_data2.append(load("res://cards/card" + str(i) + ".tres"))
+		cards_data.append(load("res://cards/card" + str(i) + ".tres"))
 	for i in range(0, 4):
-		cards.set_data(i, cards_data2[i].front_face, cards_data2[i].text, cards_data2[i].response)
+		cards.set_data(i, cards_data[i].front_face, cards_data[i].text, cards_data[i].response)
 
 
 func _unhandled_input(event):
-	viewport.unhandled_input(event)
 	if state == State.RESPONSE and NC.EventUtils.is_lclick(event):
 		_on_Next_pressed()
+	else:
+		viewport.unhandled_input(event)
 
 
 func _on_Go_pressed():
@@ -38,6 +38,14 @@ func _on_Go_pressed():
 	var obj = $"Viewports/4cards/Cards"
 	var res = obj.cards[obj._selected_idx].response
 	$"Control/Response".text = res
+
+	cards.reset()
+#	obj.cards[obj._selected_idx].slide(false, false)
+#	obj.cards[obj._selected_idx].is_slided = false
+#
+#	var vec = obj.cards[obj._selected_idx].get_node("Spatial").translation
+#	vec.y = 0
+#	obj.cards[obj._selected_idx].translation = vec
 
 	state = State.RESPONSE
 

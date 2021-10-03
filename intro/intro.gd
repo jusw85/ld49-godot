@@ -15,15 +15,8 @@ func _ready():
 
 
 func _unhandled_input(event):
-	if is_lclick(event):
+	if NC.EventUtils.is_lclick(event):
 		anim.play("fader")
-
-
-func is_lclick(event: InputEvent):
-	if event is InputEventMouseButton:
-		if event.button_index == BUTTON_LEFT and event.pressed:
-			return true
-	return false
 
 
 func _change_screen():

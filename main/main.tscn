@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://common/quit_on_action.gd" type="Script" id=1]
 [ext_resource path="res://common/audio_fader.tscn" type="PackedScene" id=2]
@@ -11,11 +11,6 @@
 [ext_resource path="res://main/3d/4cards3d.tscn" type="PackedScene" id=15]
 [ext_resource path="res://main/assets/mask.png" type="Texture" id=16]
 [ext_resource path="res://main/3d/1cards3d.tscn" type="PackedScene" id=17]
-[ext_resource path="res://cards/card3.tres" type="Resource" id=18]
-[ext_resource path="res://cards/card4.tres" type="Resource" id=19]
-[ext_resource path="res://cards/card2.tres" type="Resource" id=20]
-[ext_resource path="res://cards/card1.tres" type="Resource" id=21]
-[ext_resource path="res://cards/card5.tres" type="Resource" id=22]
 
 [sub_resource type="Animation" id=1]
 resource_name = "fade_in"
@@ -123,7 +118,6 @@ script = ExtResource( 10 )
 __meta__ = {
 "_edit_lock_": true
 }
-cards_data = [ ExtResource( 21 ), ExtResource( 20 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 22 ) ]
 
 [node name="Viewports" type="Node" parent="."]
 

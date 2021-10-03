@@ -30,13 +30,19 @@ func fade(do_fade: bool):
 		anim.play_backwards("fade")
 
 
-func slide(do_slide: bool):
+func slide(do_slide: bool, instant = false):
 	if do_slide and not is_slided:
 		is_slided = true
-		anim.play("slide")
+		if instant:
+			$Spatial.translation = Vector3(0.0, 0.5, 0.0)
+		else:
+			anim.play("slide")
 	elif not do_slide and is_slided:
 		is_slided = false
-		anim.play_backwards("slide")
+		if instant:
+			$Spatial.translation = Vector3.ZERO
+		else:
+			anim.play_backwards("slide")
 
 
 func set_face(front: Texture, back: Texture):

@@ -29,6 +29,10 @@ func unfade_all():
 	for card in cards:
 		card.fade(false)
 
+func reset():
+	cards[_selected_idx].slide(false, false)
+	_num_selected = 0
+	_selected = [false, false, false, false]
 
 func _on_Card_is_clicked(idx):
 	if not _selected[idx] and _num_selected < 1:
