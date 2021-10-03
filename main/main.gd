@@ -14,15 +14,10 @@ onready var cards = $"Viewports/4cards/Cards"
 
 onready var next = $CanvasLayer/Next
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	for i in range(0, 4):
-		cards.set_data(i, cards_data[i].front_face, cards_data[i].text)
+		cards.set_data(i, cards_data[i].front_face, cards_data[i].text, cards_data[i].response)
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
 
 func _unhandled_input(event):
 	viewport.unhandled_input(event)
@@ -31,15 +26,15 @@ func _unhandled_input(event):
 func _on_Go_pressed():
 	$Control/Description.text = ""
 	anim.play("fade_in")
-	next.visible = true
+#	next.visible = true
 	go.visible = false
 	cards.fade_all()
 	yield(get_tree().create_timer(1.0), "timeout")
-	$"Viewports/1card/Card".fade(false)
-	$"Control/Response".text = "DF"
-#	anim2.play("fade_out")
-#	cards.fade_unselected()
-#	cards.show_selected(true)
+
+	var obj = $"Viewports/4cards/Cards"
+	var res = obj.cards[obj._selected_idx].response
+	$"Control/Response".text = res
+#	$"Viewports/1card/Card".fade(false)
 
 
 func _on_Cards_cards_selected(selected):
@@ -50,8 +45,8 @@ func _on_Next_pressed():
 	anim.play_backwards("fade_in")
 	next.visible = false
 	cards.unfade_all()
-	$"Viewports/1card/Card".fade(true)
 	$"Control/Response".text = ""
+#	$"Viewports/1card/Card".fade(true)
 #	cards.show_selected(false)
 
 

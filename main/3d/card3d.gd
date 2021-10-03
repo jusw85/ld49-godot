@@ -6,8 +6,10 @@ signal is_clicked(idx)
 var idx = 0
 var is_slided = false
 var is_faded = false
-var data = ""
+
 var card_idx = 0
+var data = ""
+var response = ""
 
 onready var anim: AnimationPlayer = $AnimationPlayer
 onready var area: Area = $Spatial/Area
