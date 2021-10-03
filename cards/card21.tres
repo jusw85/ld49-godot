@@ -8,4 +8,5 @@ script = ExtResource( 1 )
 front_face = ExtResource( 2 )
 text = "Ham Solo watches a movie"
 response = "Ham Solo watches a movie, snacking on potato chips throughout the film, leaving food crumbs all over the floor. Harry Porker was not pleased."
+prereq_cards = [  ]
 resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]

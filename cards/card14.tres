@@ -13,5 +13,5 @@ Ms Teriyaki who was just left Harry Porker's house, was holding on to the health
 \"I happened to overhear you, Mrs Bacon. Would you like to drink this health potion brewed by Harry Potter?\" asked Ms Teriyaki.
 \"That will be perfect!,\" thanked Mrs Bacon as she gulped down the drink. The love potion starts to take effect, that will make her fall in love with the first man she sees.
 At this moment, a dazed and confused Billy Goat came by, and all the hatred they had for each other was momentarily gone."
-prereq_cards = [ 27, 13 ]
+prereq_cards = [ 21, 22, 17, 9, 28, 1, 23 ]
 resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]

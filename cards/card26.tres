@@ -12,4 +12,5 @@ response = "Billy Goat went for his morning walk, when he encountered Ramsey ret
 \"It's getting harder to find food these days,\" said Ramsey.
 \"You know why? It's because of the damned pigs! Contributing nothing and eating all day. I don't like Ham solo expecially, always drinking with Goatse and corrupting him. He is a stain in our farm\"
 Ramsey took notice of Billy's comments."
+prereq_cards = [  ]
 resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
