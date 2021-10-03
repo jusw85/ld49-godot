@@ -7,3 +7,4 @@
 script = ExtResource( 1 )
 front_face = ExtResource( 2 )
 text = "Cluck Norris repairs the fence"
+response = "Cluck Norris noticed that the perimeter fence was partially damaged. \"If this is not repaired, then the wolves could easily enter the farm. The weak and vulnerable will be at risk\", thought Cluck Norris. After some time considering, Cluck Norris thought it wasn't a bad idea, and proceed to roundhouse kick the fence, destroying them."

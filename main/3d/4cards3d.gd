@@ -2,69 +2,41 @@ extends Node
 
 signal cards_selected(selected)  # main
 
-export var texture: Texture
 var _num_selected = 0
+var _selected = [false, false, false, false]
 
 onready var cards = $CardsGroup.get_children()
-#onready var selected = $SelectedCard
 
-# Called when the node enters the scene tree for the first time.
+
 func _ready():
-	for card in cards:
-		card.connect("card_selected", self, "_on_Card_card_selected")
+	for i in range(0, cards.size()):
+		cards[i].idx = i
+		cards[i].connect("is_clicked", self, "_on_Card_is_clicked")
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
-
-func _unhandled_input(event):
-	pass
-#	if event.is_action_pressed("ui_accept"):
-#		fade_unselected()
-#	if event is InputEventMouseButton and event.pressed == true :
-#		print(event.position)
-#		print(event.global_position)
 
 func set_data(idx, texture, data):
-	cards[idx].set_face(texture)
+	cards[idx].set_face(texture, texture)
 	cards[idx].data = data
 
 
 func fade_all():
 	for card in cards:
-		card.fade()
+		card.fade(true)
 
 func unfade_all():
 	for card in cards:
-		card.unfade()
+		card.fade(false)
 
-func fade_unselected():
-	for card in cards:
-		if not card.is_selected:
-			card.fade()
 
-#func show_selected(visible):
-#	if visible:
-#		selected.unfade()
-#	else:
-#		selected.fade()
-
-func _on_Card_card_selected(is_selected):
-	assert(_num_selected <= 2 and _num_selected >= 0)
-	if is_selected:
+func _on_Card_is_clicked(idx):
+	if not _selected[idx] and _num_selected < 2:
+		_selected[idx] = true
+		cards[idx].slide(true)
 		_num_selected += 1
-		if _num_selected >= 2:
-			_lock_cards(true)
+		if _num_selected == 2:
 			emit_signal("cards_selected", true)
-	else:
+	elif _selected[idx]:
+		_selected[idx] = false
+		cards[idx].slide(false)
 		_num_selected -= 1
-		if _num_selected < 2:
-			_lock_cards(false)
-			emit_signal("cards_selected", false)
-#	print(_num_selected)
-
-
-func _lock_cards(is_lock):
-	for card in cards:
-		card.can_select = not is_lock
+		emit_signal("cards_selected", false)

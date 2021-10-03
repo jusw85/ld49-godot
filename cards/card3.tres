@@ -5,6 +5,6 @@
 
 [resource]
 script = ExtResource( 1 )
-id = 0
 front_face = ExtResource( 2 )
 text = "Cluck Norris jogs in the park"
+response = "Cluck Norris was jogging around the farm as usual, when he saw Wiggly Pig thrusting her hips. \"What kind of exercise is that?\" asked Cluck Norris."

@@ -9,9 +9,8 @@ export (Array, Resource) var cards_data
 
 onready var go = $Go
 onready var anim = $AnimationPlayer
-#onready var anim2 = $"4cards/4cards/AnimationPlayer"
-onready var viewport = $"4cards/Viewport"
-onready var cards = $"4cards/Viewport/Cards"
+onready var viewport = $"Viewports/4cards"
+onready var cards = $"Viewports/4cards/Cards"
 
 onready var next = $CanvasLayer/Next
 
@@ -30,12 +29,14 @@ func _unhandled_input(event):
 
 
 func _on_Go_pressed():
+	$Control/Description.text = ""
 	anim.play("fade_in")
 	next.visible = true
 	go.visible = false
 	cards.fade_all()
 	yield(get_tree().create_timer(1.0), "timeout")
-	$Viewport/Card.fade(false)
+	$"Viewports/1card/Card".fade(false)
+	$"Control/Response".text = "DF"
 #	anim2.play("fade_out")
 #	cards.fade_unselected()
 #	cards.show_selected(true)
@@ -49,7 +50,8 @@ func _on_Next_pressed():
 	anim.play_backwards("fade_in")
 	next.visible = false
 	cards.unfade_all()
-	$Viewport/Card.fade(true)
+	$"Viewports/1card/Card".fade(true)
+	$"Control/Response".text = ""
 #	cards.show_selected(false)
 
 
