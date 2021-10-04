@@ -110,22 +110,22 @@ shader = SubResource( 7 )
 [sub_resource type="ViewportTexture" id=9]
 viewport_path = NodePath("Viewports/1card")
 
-[sub_resource type="StyleBoxFlat" id=12]
+[sub_resource type="StyleBoxFlat" id=10]
 bg_color = Color( 0, 0, 0, 1 )
 
 [sub_resource type="CanvasItemMaterial" id=11]
 
-[sub_resource type="StyleBoxFlat" id=13]
+[sub_resource type="StyleBoxFlat" id=12]
 bg_color = Color( 1, 1, 1, 1 )
 
-[sub_resource type="StyleBoxTexture" id=17]
+[sub_resource type="StyleBoxTexture" id=13]
 texture = ExtResource( 14 )
 region_rect = Rect2( 50, 50, 860, 460 )
 
-[sub_resource type="StyleBoxFlat" id=18]
+[sub_resource type="StyleBoxFlat" id=14]
 bg_color = Color( 1, 1, 1, 0.917647 )
 
-[sub_resource type="DynamicFont" id=10]
+[sub_resource type="DynamicFont" id=15]
 size = 18
 font_data = ExtResource( 3 )
 
@@ -256,7 +256,7 @@ margin_left = 100.0
 margin_top = 450.0
 margin_right = -100.0
 margin_bottom = -24.0
-custom_styles/panel = SubResource( 12 )
+custom_styles/panel = SubResource( 10 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -269,7 +269,7 @@ margin_left = 4.0
 margin_top = 4.0
 margin_right = -4.0
 margin_bottom = -4.0
-custom_styles/panel = SubResource( 13 )
+custom_styles/panel = SubResource( 12 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -294,7 +294,7 @@ margin_top = 50.0
 margin_right = -50.0
 margin_bottom = -30.0
 mouse_filter = 2
-custom_styles/panel = SubResource( 17 )
+custom_styles/panel = SubResource( 13 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -307,7 +307,7 @@ margin_top = 4.0
 margin_right = -4.0
 margin_bottom = -4.0
 mouse_filter = 2
-custom_styles/panel = SubResource( 18 )
+custom_styles/panel = SubResource( 14 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -319,7 +319,7 @@ margin_left = 18.0
 margin_top = 17.0
 margin_right = -20.0
 margin_bottom = 122.0
-custom_fonts/font = SubResource( 10 )
+custom_fonts/font = SubResource( 15 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 autowrap = true
 __meta__ = {

@@ -26,21 +26,32 @@ func fade(do_fade: bool):
 		is_faded = true
 		area.visible = false
 		fade_anim.play("fade")
+
+		$Tween.stop_all()
+		$Tween.interpolate_property($Spatial/Outline, "material/0:albedo_color:a", null, 0, 0.5)
+		$Tween.start()
 	else:
 		is_faded = false
 		area.visible = true
+		$Tween.stop_all()
+		$Tween.interpolate_property($Spatial/Outline, "material/0:albedo_color:a", null, 1, 0.5)
+		$Tween.start()
 		fade_anim.play_backwards("fade")
 
 
 func slide(do_slide: bool, instant = false):
 	if do_slide and not is_slided:
 		is_slided = true
+		var col = $Spatial/Outline.get_active_material(0).albedo_color
+		$Spatial/Outline.get_active_material(0).albedo_color = Color8(119, 221, 119, col.a8)
 		if instant:
 			$Spatial.translation = Vector3(0.0, 0.5, 0.0)
 		else:
 			slide_anim.play("slide")
 	elif not do_slide and is_slided:
 		is_slided = false
+		var col = $Spatial/Outline.get_active_material(0).albedo_color
+		$Spatial/Outline.get_active_material(0).albedo_color = Color8(0, 0, 0, col.a8)
 		if instant:
 			$Spatial.translation = Vector3.ZERO
 		else:
