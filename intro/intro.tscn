@@ -43,7 +43,19 @@ tracks/1/keys = {
 
 [node name="Intro" type="Node"]
 script = ExtResource( 1 )
-texts = [ "", "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur", "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod", "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." ]
+texts = [ "", "Chickens, pigs and goats' nagging incessant,
+
+Relentless berating to horses unpleasant", "Banded together united in protest,
+
+Displeased at the work conditions grotesque
+
+Sullen horses uprooted their herd in haste,
+
+Hauling their homes leaving the farm to waste,
+", "Return the herd by building horses' stable,
+
+Or decide the tale for this horrid fable?
+" ]
 bgs = [ ExtResource( 6 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 4 ) ]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
