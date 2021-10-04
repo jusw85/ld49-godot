@@ -103,7 +103,8 @@ func _on_Go_pressed():
 	if card.card_idx == 43:
 		is_building_next_turn = true
 
-	$"Control/Response".text = card.response
+	$"Control/Panel2".visible = true
+	$"Control/Panel2/Panel3/Response".text = card.response
 	seen_cards[card.card_idx] = true
 	for i in range(13):
 		resources[i] += card.resource_changes[i]
@@ -126,7 +127,8 @@ func _on_Next_pressed():
 	anim.play_backwards("fade_in")
 #	next.visible = false
 	cards.unfade_all()
-	$"Control/Response".text = ""
+	$"Control/Panel2".visible = false
+	$"Control/Panel2/Panel3/Response".text = ""
 	state = State.PICKING
 
 #	$"Viewports/1card/Card".fade(true)

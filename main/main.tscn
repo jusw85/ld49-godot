@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://common/quit_on_action.gd" type="Script" id=1]
 [ext_resource path="res://common/audio_fader.tscn" type="PackedScene" id=2]
@@ -117,6 +117,20 @@ bg_color = Color( 0, 0, 0, 1 )
 
 [sub_resource type="StyleBoxFlat" id=13]
 bg_color = Color( 1, 1, 1, 1 )
+
+[sub_resource type="StyleBoxFlat" id=14]
+bg_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+
+[sub_resource type="StyleBoxFlat" id=15]
+bg_color = Color( 1, 1, 1, 1 )
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
 
 [sub_resource type="DynamicFont" id=10]
 size = 18
@@ -255,7 +269,7 @@ __meta__ = {
 [node name="Description" type="Label" parent="Control/Panel/Panel2"]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_top = 7.0
+margin_top = 15.0
 custom_fonts/font = ExtResource( 9 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 align = 1
@@ -263,15 +277,44 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Response" type="Label" parent="Control"]
+[node name="Panel2" type="Panel" parent="Control"]
+visible = false
+self_modulate = Color( 1, 1, 1, 0.501961 )
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 232.0
-margin_top = 67.0
-margin_right = -45.0
-margin_bottom = -103.0
+margin_left = 50.0
+margin_top = 51.0
+margin_right = -41.0
+margin_bottom = -33.0
+mouse_filter = 2
+custom_styles/panel = SubResource( 14 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel3" type="Panel" parent="Control/Panel2"]
+self_modulate = Color( 1, 1, 1, 0.803922 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 4.0
+margin_top = 4.0
+margin_right = -4.0
+margin_bottom = -4.0
+mouse_filter = 2
+custom_styles/panel = SubResource( 15 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Response" type="Label" parent="Control/Panel2/Panel3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 18.0
+margin_top = 17.0
+margin_right = -20.0
+margin_bottom = 122.0
 custom_fonts/font = SubResource( 10 )
-custom_colors/font_color = Color( 1, 0, 0, 1 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
 autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
