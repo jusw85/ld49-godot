@@ -4,6 +4,7 @@ signal lumber_changed(lumber)
 
 enum State { PICKING, RESPONSE }
 var state = State.PICKING
+var is_building_next_turn = false
 
 var rng = RandomNumberGenerator.new()
 
@@ -23,7 +24,7 @@ func _ready():
 	rng.randomize()
 	for _i in range(13):
 		resources.append(0)
-	for i in range(43):
+	for i in range(44):
 		cards_data.append(load("res://cards/card" + str(i) + ".tres"))
 		seen_cards.append(false)
 
@@ -49,7 +50,7 @@ func get_available_cards():
 		if avail:
 			arr.append(i)
 	if resources[12] >= 10:
-		arr.append(99)
+		arr.append(43)
 	return arr
 
 
@@ -57,6 +58,14 @@ func rand_cards():
 #	var arr = []
 #	for i in range(0, cards_data.size()):
 #		arr.append(i)
+	if is_building_next_turn:
+		is_building_next_turn = false
+		cards.set_data(0, cards_data[37], 37)
+		cards.set_data(1, cards_data[38], 38)
+		cards.set_data(2, cards_data[39], 39)
+		cards.set_data(3, cards_data[40], 40)
+		return
+
 	var arr = get_available_cards()
 
 	for i in range(0, 4):
@@ -64,14 +73,15 @@ func rand_cards():
 		arr.shuffle()
 #		print(arr)
 		var idx = arr.pop_back()
-		if idx == 99:
-			cards.set_data(0, cards_data[37], 37)
-			cards.set_data(1, cards_data[38], 38)
-			cards.set_data(2, cards_data[39], 39)
-			cards.set_data(3, cards_data[40], 40)
-			break
-		else:
-			cards.set_data(i, cards_data[idx], idx)
+#		if idx == 99:
+#			cards.set_data(0, cards_data[37], 37)
+#			cards.set_data(1, cards_data[38], 38)
+#			cards.set_data(2, cards_data[39], 39)
+#			cards.set_data(3, cards_data[40], 40)
+#			break
+#		else:
+#			cards.set_data(i, cards_data[idx], idx)
+		cards.set_data(i, cards_data[idx], idx)
 
 
 func _on_Go_pressed():
@@ -83,6 +93,9 @@ func _on_Go_pressed():
 	yield(get_tree().create_timer(1.0), "timeout")
 
 	var card = cards.cards[cards._selected_idx]
+
+	if card.card_idx == 43:
+		is_building_next_turn = true
 
 	$"Control/Response".text = card.response
 	seen_cards[card.card_idx] = true
