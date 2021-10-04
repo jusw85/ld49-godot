@@ -7,6 +7,7 @@
 script = ExtResource( 1 )
 front_face = ExtResource( 2 )
 text = "Albert Eggstein goes to the woods"
-response = "Professor Albert Eggstein went to the woods and took note the low amount of food supplies available. When resources are scarce, there will be conflict. Albert is concerned."
+response = "Professor Albert Eggstein went to the woods and took note the low amount of food supplies available. When resources are scarce, there will be conflict. 
+Albert is concerned."
 prereq_cards = [  ]
 resource_changes = [ 0, 0, 0, -5, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
