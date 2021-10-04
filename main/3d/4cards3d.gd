@@ -33,16 +33,19 @@ func reset():
 	_selected = [false, false, false, false]
 
 func _on_Card_is_clicked(idx):
-	if not _selected[idx] and _num_selected < 1:
-		_selected_idx = idx
-		_selected[idx] = true
-		cards[idx].slide(true)
-		_num_selected += 1
-		if _num_selected == 1:
-			emit_signal("cards_selected", true)
+	if not _selected[idx]:
+		if _num_selected < 1:
+			_selected_idx = idx
+			_selected[idx] = true
+			cards[idx].slide(true)
+			_num_selected += 1
+#			if _num_selected == 1:
+#				emit_signal("cards_selected", true)
+		else:
+			pass
 	elif _selected[idx]:
 		_selected_idx = -1
 		_selected[idx] = false
 		cards[idx].slide(false)
 		_num_selected -= 1
-		emit_signal("cards_selected", false)
+#		emit_signal("cards_selected", false)
