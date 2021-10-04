@@ -90,7 +90,8 @@ func rand_cards():
 
 
 func _on_Go_pressed():
-	$Control/Description.text = ""
+	$Control/Panel.visible = false
+	$Control/Panel/Panel2/Description.text = ""
 	anim.play("fade_in")
 #	next.visible = true
 	go.visible = false
@@ -131,4 +132,8 @@ func _on_Next_pressed():
 
 
 func _on_Card_show_text(text):
-	$Control/Description.text = text
+	if text == "":
+		$Control/Panel.visible = false
+	else:
+		$Control/Panel.visible = true
+		$Control/Panel/Panel2/Description.text = text
