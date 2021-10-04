@@ -7,7 +7,7 @@
 script = ExtResource( 1 )
 front_face = ExtResource( 2 )
 text = "Wiggly Pig finds a mud puddle"
-response = "Wiggly finds a nice, warm mud puddle. She took out her boots and dived straight into the mud. "
+response = "Wiggly found a nice, warm mud puddle. She took off her boots and dove straight into the mud."
 prereq_cards = [  ]
 resource_changes = [ 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0 ]
 repeatable = true

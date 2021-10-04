@@ -7,8 +7,8 @@
 script = ExtResource( 1 )
 front_face = ExtResource( 2 )
 text = "Mr Goatse surfs the internet"
-response = "Mr Goatse recalled during last night's drinks with Ham Solo, he was advised to 'never google your own name\". 
-Intrigued, Mr Goatse decides to google his own name. 
+response = "Mr Goatse recalled during last night's drinks with Ham Solo, he was advised to 'never Google your own name\". 
+Intrigued, Mr Goatse decides to Google his own name. 
 Mr Goatse was shocked by what he saw. 
 Ham Solo thought it was funny."
 prereq_cards = [  ]

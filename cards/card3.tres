@@ -7,8 +7,8 @@
 script = ExtResource( 1 )
 front_face = ExtResource( 2 )
 text = "Ms Teriyaki reads manga"
-response = "Ms Teriyaki brought out her Manga, a japanese stylised comic book which she bought while she was travelling in Japan. As she has a basic command of the language, she was barely able to read the japanese characters within the speech bubbles. With Google Translate, she agonizingly deciphers each japanese sentence in english. 
-Unfortunately for her, she did not know that the manga is read from right to left. "
+response = "Ms Teriyaki took out her manga, a Japanese style comic book she bought while she was travelling in Japan. As she only had basic command of the language, she was barely able to read the Japanese characters within the speech bubbles. With Google Translate, she agonisingly deciphered each sentence into english. 
+Unfortunately for her, she didn't know that manga was read from right to left. "
 prereq_cards = [  ]
 resource_changes = [ 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
 repeatable = true

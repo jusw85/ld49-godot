@@ -7,12 +7,12 @@
 script = ExtResource( 1 )
 front_face = ExtResource( 2 )
 text = "Ham Solo goes to a bar"
-response = "Ham Solo has a few drinks with his buddy Mr Goatse, when they saw Chef Ramsey flirting with Ms Teriyaki, and wrote down something on a piece of paper in haste.
-\"Do you think, Goatse, that chick just gave Ramsey her phone number?\" queried Ham Solo.
+response = "Ham Solo had a few drinks with his buddy Mr Goatse, when they saw Chef Ramsey flirting with Ms Teriyaki, and wrote down something on a piece of paper in haste.
+\"Do you think, Goatse, that chick just gave Ramsey her phone number?\" asked Ham Solo.
 \"If he wrote down her number, then let's steal it!\" suggested Mr Goatse.
-While Ramsey was not looking, Ham Solo and Mr Goatse sneaked into the kitchen and stole the paper. It wasn't Ms Teriyaki's number as they thought, but just a recipe containing 11 herbs and spices.
-\"Why not we give Colonel Tenders this recipe. Perhaps it could inspire him to barbeque again and forget his past?\" suggested Ham Solo.
-Mr Goatse thought it was a good idea to give Colonel Tenders this recipe to cheer him up. \"I will share with him some meat too, hoping he would barbeque some food for everyone!\" said Mr Goatse."
+While Ramsey was not looking, Ham Solo and Mr Goatse snuck into the kitchen and stole the paper. It wasn't Ms Teriyaki's number as they had thought, but a recipe containing eleven herbs and spices.
+\"Why don't we give Colonel Tenders this recipe. Perhaps it could inspire him to barbeque again and forget his past?\" suggested Ham Solo.
+Mr Goatse thought it was a good idea to give Colonel Tenders this recipe to cheer him up. \"I will share some meat with him too, maybe he will barbeque some food for everyone!\" hoped Mr Goatse."
 prereq_cards = [ 2, 34 ]
 resource_changes = [ 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0 ]
 repeatable = false

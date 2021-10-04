@@ -8,10 +8,10 @@ script = ExtResource( 1 )
 front_face = ExtResource( 2 )
 text = "Billy Goat plays basketball"
 response = "Old Billy Goat doesn't like to hear his wife, Nanny, nagging at him to do his chores all day. 
-When Nanny is away, Billy retrieves his old ball from his store and practised shooting hoops at his back yard. 
-Wiggly Pig  was walking by when she saw Billy playing basketball alone. \"Can I join your game, Mr Billy Goat?\" asked Wiggly Pig.
+When Nanny was away, Billy retrieved his old ball from his store and practised shooting hoops in his back yard. 
+Wiggly Pig was walking by when she saw Billy playing basketball alone. \"Can I join your game, Mr Billy Goat?\" asked Wiggly Pig.
 \"We don't play with lazy pigs like you,\" said Billy.
-Wiggly is upset, and went home to complain to her mother, Mrs Bacon."
+Wiggly was upset, and went home to complain to her mother, Mrs Bacon."
 prereq_cards = [  ]
 resource_changes = [ 0, 0, 0, 0, -5, -5, 0, 0, 5, 0, 0, 0, 0 ]
 repeatable = false

@@ -8,11 +8,11 @@ script = ExtResource( 1 )
 front_face = ExtResource( 2 )
 text = "Colonel Tenders barbeques some meat"
 response = "Colonel Tenders was staring into the distance, when his neighbour Mr Goatse called out to him. \"Hey Sir, would you like to have some meat?\" asked Mr Goatse. 
-Colonel Tenders, who used to be a chef, replied \"Well, I am an expert on grilled meat.\" 
-Colonel Tenders start grilling the meat, and before long, the aroma of the barbequed meat permeates every corner of the farm. 
+Colonel Tenders, who used to be a chef, replied \"Well, I'm an expert on grilled meat.\" 
+Colonel Tenders started grilling the meat, and before long, the aroma of barbequed meat permeated every corner of the farm. 
 The pigs were salivating as they quickly arrived to get a taste of Colonel Tenders' special BBQ meat. 
-The pigs quickly gorged into the grilled meat, without knowing what they were eating. 
-Ramsey and Goatse was watching."
+The pigs quickly gorged on grilled meat, without knowing what they were eating. 
+Ramsey and Goatse were watching."
 prereq_cards = [ 2, 34, 19, 26, 4, 36 ]
 resource_changes = [ 0, 10, 0, 0, 10, 10, 10, 10, 0, 0, 10, -5, 0 ]
 repeatable = false

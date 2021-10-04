@@ -7,7 +7,7 @@
 script = ExtResource( 1 )
 front_face = ExtResource( 2 )
 text = "Harry Porker reads a magazine"
-response = "Harry Porker frequently enjoys reading men's magazine at the outhouse."
+response = "Harry Porker frequently enjoys reading men's magazines in the outhouse."
 prereq_cards = [  ]
 resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0 ]
 repeatable = true

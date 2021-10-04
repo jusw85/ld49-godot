@@ -7,7 +7,7 @@
 script = ExtResource( 1 )
 front_face = ExtResource( 2 )
 text = "Nanny Goat listens to music"
-response = "In her free time, Nanny Goat will listen to her favourite 80s pop music. 
+response = "In her free time, Nanny Goat listens to her favourite 80s pop music. 
 Her husband, Billy Goat, hates it."
 prereq_cards = [  ]
 resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, -5, 5, 0, 0, 0 ]

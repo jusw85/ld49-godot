@@ -7,9 +7,9 @@
 script = ExtResource( 1 )
 front_face = ExtResource( 2 )
 text = "Wiggly Pig goes to school"
-response = "Wiggly was walking to school when she saw Billy Goat approached him. Wiggly was still upset at Billy.
-Billy goat, who was under the effects of the magic mushrooms, expressed deep regret to his pasts actions and hurried over to Wiggly to apologise to her. 
-Wiggly, thinking that Billy is charging at her, feared for her life and ran towards home to find Mrs Bacon."
+response = "Wiggly was walking to school when she saw Billy Goat approacheinghim. Wiggly was still upset at Billy.
+Billy Goat, who was under the effects of the magic mushrooms, expressed deep regret for his pasts actions and hurried over to Wiggly to apologise to her. 
+Wiggly, thinking that Billy was charging at her, feared for her life and ran home to find Mrs Bacon."
 prereq_cards = [ 27, 17, 9, 28, 25, 13 ]
 resource_changes = [ 0, 0, 0, 0, 0, -20, 0, 0, 0, 0, 0, 0, 0 ]
 repeatable = false

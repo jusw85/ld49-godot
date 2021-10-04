@@ -7,8 +7,8 @@
 script = ExtResource( 1 )
 front_face = ExtResource( 2 )
 text = "Ms Teriyaki goes to the market"
-response = "As Ms Teriyaki walked through the farmer's market, she saw all her dead brethen hanging at the stalls. \"My goodness!\" cried out Ms Teriyaki. 
-She was clearly traumatised by what she saw and hurried back to the farm, after purchasing the essential supplies for the farm."
+response = "As Ms Teriyaki made her way through the farmer's market, she saw her dead brethen hanging from the stalls. \"My goodness!\" cried out Ms Teriyaki. 
+She was traumatised by what she saw and hurried back to the farm, after purchasing the materials needed to rebuild the stables."
 prereq_cards = [  ]
 resource_changes = [ -10, -5, -5, -5, 0, 0, 5, 0, 0, 0, 5, 5, 10 ]
 repeatable = false

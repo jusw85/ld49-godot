@@ -6,9 +6,9 @@
 [resource]
 script = ExtResource( 1 )
 front_face = ExtResource( 2 )
-text = "All the farm animals to aid in the construction of the stables"
+text = "All the farm animals aid in the construction of the stables"
 response = "10 lumber is consumed for the construction of the stable.
-They are happy with the progress of the stable."
+The farm animasls are happy with the progress of the stable."
 prereq_cards = [  ]
 resource_changes = [ 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, -10 ]
 repeatable = true

@@ -8,8 +8,8 @@ script = ExtResource( 1 )
 front_face = ExtResource( 2 )
 text = "Billy Goat eats a mushroom"
 response = "Billy Goat was tasked by his wife Nanny to climb the hills and look for mushrooms for dinner.
-As he was not a mushroom expert, he went ask Ham Solo for advice. 
-\"So you are looking for mushrooms, old Billy?\" asked Ham Solo, \"why don't you buy some of my mushrooms instead? I will let you have some for a good price!\"
+As he was not a mushroom expert, he went to ask Ham Solo for advice. 
+\"So you are looking for mushrooms, old Billy?\" asked Ham Solo. \"Why don't you buy some of my mushrooms instead? I will let you have some for a good price!\"
 Relieved, Billy Goat traded with Ham Solo, not knowing he just bought psychedelic mushrooms. Billy consumed one of the mushrooms and had a spiritual awakening."
 prereq_cards = [ 17, 9, 28 ]
 resource_changes = [ 0, 0, 0, 0, 0, 0, 5, 0, 20, 0, 0, 0, 0 ]

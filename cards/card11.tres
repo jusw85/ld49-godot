@@ -7,10 +7,10 @@
 script = ExtResource( 1 )
 front_face = ExtResource( 2 )
 text = "Albert Eggstein solves an equation"
-response = "Professor Albert Eggstein went to Billy's and Nanny's house to look for him, only to discover a broken front door and nobody at home. Albert Eggstein analysized the damages, and instantly recognised the damage was smilar to the fence broken by Cluck Norris from his famous round house kick. 
-\"So, Nanny is cheating on Billy with Cluck Norris, and to do that, Nanny told Billy to go to the hills to collect mushrooms, but instead, Billy bought magic mushrooms from Ham Solo. Under the influence of the magic mushroom, Billy would want to apologise to Wiggly, who will run away after what he did to her mother, Mrs Bacon. Ham Solo, on his 'shoot first' principle, will try to take down Billy, which will trigger Colonel's PTSD. Ramsey who was upset of his lost recipe, will go after Ham Solo with his sharpened knife. If Ramsey knows about Goatse's mystery meat is the spare ribs which was fed to the pigs, there will be anarchy!\"
+response = "Professor Albert Eggstein went to Billy's and Nanny's house to look for him, only to discover a broken front door and nobody at home. Albert Eggstein analysed the damages, and instantly recognised the damage was smilar to the fence broken by Cluck Norris from his famous roundhouse kick. 
+\"So, Nanny is cheating on Billy with Cluck Norris, and to do that, Nanny told Billy to go to the hills to collect mushrooms, but instead, Billy bought magic mushrooms from Ham Solo. Under the influence of the magic mushroom, Billy would want to apologise to Wiggly, who will run away after what he did to her mother, Mrs Bacon. Ham Solo, on his 'shoot first' principle, will try to take down Billy, which will trigger Colonel's PTSD. Ramsey who was upset with his lost recipe, will go after Ham Solo with his sharpened knife. If Ramsey knows that Goatse's mystery meat is the spare ribs which was fed to the pigs, there will be anarchy!\"
 Just when everything seemed doomed, Albert Eggstein and Harry Porker saw Mrs Bacon and Billy Goat embracing each other.
-\"Perhaps not all are lost.\" thought Albert Eggstein."
+\"Perhaps not all is lost.\" thought Albert Eggstein."
 prereq_cards = [ 21, 22, 17, 9, 28, 1, 8, 26, 2, 34, 19, 4, 36, 6, 31, 23, 14 ]
 resource_changes = [ 0, 0, 0, 30, 0, 0, 0, -30, 0, 0, 0, 0, 0 ]
 repeatable = false
