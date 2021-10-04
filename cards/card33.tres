@@ -8,4 +8,4 @@ script = ExtResource( 1 )
 front_face = ExtResource( 2 )
 text = "Mr Goatse surfs the internet"
 response = "Mr Goatse recalled during last night's drinks with Ham Solo, he was advised to 'never google your own name\". Intrigued, Mr Goatse decides to google his own name. Mr Goatse was shocked by what he saw. Ham Solo thought it was funny."
-resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+resource_changes = [ 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, -15, 0, 0 ]

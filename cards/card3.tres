@@ -9,4 +9,4 @@ front_face = ExtResource( 2 )
 text = "Ms Teriyaki reads manga"
 response = "Ms Teriyaki brought out her Manga, a japanese stylised comic book which she bought while she was travelling in Japan. As she has a basic command of the language, she was barely able to read the japanese characters within the speech bubbles. With Google Translate, she agonizingly deciphers each japanese sentence in english. Unfortunately for her, she did not know that the manga is read from right to left. "
 prereq_cards = [  ]
-resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+resource_changes = [ 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]

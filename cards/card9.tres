@@ -11,4 +11,4 @@ response = "Cluck Norris was jogging around the farm as usual, when he saw Wiggl
 \"It's called twerking, and everyone's doing it!\" replied Wiggly Pig, as she continues her dance.
 Cluck Norris is inspired, and thought that this is a good workout to train the farm animals to be physically fit. Cluck Norris invited everyone to join his gym class."
 prereq_cards = [ 17 ]
-resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+resource_changes = [ 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]

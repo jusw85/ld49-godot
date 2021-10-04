@@ -9,4 +9,4 @@ front_face = ExtResource( 2 )
 text = "Cluck Norris does the dishes"
 response = "Cluck Norris hates washing the dishes as it will get all his feathers wet. Fortunately for him, Nanny Goat always offer to help him wash the dishes when she is around. "
 prereq_cards = [  ]
-resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10 ]
+resource_changes = [ 0, 0, -5, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0 ]

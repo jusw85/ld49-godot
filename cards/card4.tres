@@ -11,4 +11,4 @@ response = "While Colonel Tenders was collecting his mail, he found a slip of pa
 Meanwhile, Chef Ramsey was looking for his lost recipe, when he saw the commotion between Ham Solo and Colonel Tenders.
 \"So Ham Solo is trying to sell my secret recipe to my rival? Presposterous!\" muttered Ramsey."
 prereq_cards = [ 2, 34, 19 ]
-resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+resource_changes = [ 0, -10, 0, 0, 0, 0, -5, 0, 0, 0, 10, -10, 0 ]

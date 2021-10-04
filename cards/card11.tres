@@ -12,4 +12,4 @@ response = "Professor Albert Eggstein went to Billy's and Nanny's house to look 
 Just when seemed doomed, Albert Eggstein saw Mrs Bacon and Billy Goat embracing each other.
 \"Perhaps not all are lost.\" thought Albert Eggstein."
 prereq_cards = [ 21, 22, 17, 9, 28, 1, 8, 26, 2, 34, 19, 4, 36, 6, 31, 23, 14 ]
-resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+resource_changes = [ 0, 0, 0, 30, 0, 0, 0, -30, 0, 0, 0, 0, 0 ]

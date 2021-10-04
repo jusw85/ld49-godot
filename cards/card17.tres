@@ -13,4 +13,4 @@ Ham Solo is pleased with what he saw.
 Mr Goatse is pleased with what he saw.
 Cluck Norris is pleased with what he saw."
 prereq_cards = [  ]
-resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+resource_changes = [ 0, 0, 5, 0, 0, 10, 0, 5, 0, -5, 5, 0, 0 ]

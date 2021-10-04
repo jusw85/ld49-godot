@@ -10,6 +10,10 @@ var rng = RandomNumberGenerator.new()
 
 var cards_data = []
 var seen_cards = []
+# Teriyaki, Tenders, Cluck, Eggstein,
+# Bacon, Wiggly, Ham, Harry,
+# Billy, Nanny, Goatse, Ramsey
+# Lumber
 var resources = []
 
 onready var go = $Go
@@ -22,8 +26,9 @@ onready var next = $CanvasLayer/Next
 func _ready():
 	randomize()
 	rng.randomize()
-	for _i in range(13):
-		resources.append(0)
+	for _i in range(12):
+		resources.append(50)
+	resources.append(0)
 	for i in range(44):
 		cards_data.append(load("res://cards/card" + str(i) + ".tres"))
 		seen_cards.append(false)
