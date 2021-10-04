@@ -2,9 +2,10 @@ extends Node2D
 
 signal lumber_changed(lumber)
 
-enum State { PICKING, RESPONSE }
+enum State { PICKING, RESPONSE, ENDING }
 var state = State.PICKING
 var is_building_next_turn = false
+var is_ending_next_turn = false
 
 var rng = RandomNumberGenerator.new()
 
@@ -15,6 +16,8 @@ var seen_cards = []
 # Billy, Nanny, Goatse, Ramsey
 # Lumber
 var resources = []
+
+var num_builds = 0
 
 onready var go = $Go
 onready var anim = $AnimationPlayer
@@ -103,6 +106,12 @@ func _on_Go_pressed():
 	if card.card_idx == 43:
 		is_building_next_turn = true
 
+	if card.card_idx == 37 or card.card_idx == 38 or card.card_idx == 39 or card.card_idx == 40:
+		num_builds += 1
+		if num_builds == 2:
+			is_ending_next_turn = true
+
+
 	$ResponseAnimation.play("fade")
 #	$"Control/Panel2".visible = true
 	$"Control/Panel2/Panel3/Response".text = card.response
@@ -126,6 +135,10 @@ func _on_Cards_cards_selected(selected):
 
 func _on_Next_pressed():
 	$ResponseAnimation.play_backwards("fade")
+	if is_ending_next_turn:
+		yield($ResponseAnimation, "animation_finished")
+		get_tree().change_scene("res://end/end.tscn")
+		return
 	anim.play_backwards("fade_in")
 #	next.visible = false
 	cards.unfade_all()
