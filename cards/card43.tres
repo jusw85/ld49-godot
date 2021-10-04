@@ -10,4 +10,4 @@ text = "The farm animals gather to build the stables"
 response = "With enough lumber in storage, the farm animals gather to build the stables"
 prereq_cards = [  ]
 resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-repeatable = false
+repeatable = true

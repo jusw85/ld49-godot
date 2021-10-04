@@ -50,6 +50,9 @@ func get_available_cards():
 	var arr = []
 #	for i in range(0, cards_data.size()):
 	for i in range(1, 37):
+		if not cards_data[i].repeatable and seen_cards[i]:
+			continue
+
 		var avail = true
 		for prereq in cards_data[i].prereq_cards:
 			if not seen_cards[prereq]:
@@ -108,7 +111,7 @@ func _on_Go_pressed():
 
 	if card.card_idx == 37 or card.card_idx == 38 or card.card_idx == 39 or card.card_idx == 40:
 		num_builds += 1
-		if num_builds == 2:
+		if num_builds == 3:
 			is_ending_next_turn = true
 
 

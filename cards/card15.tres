@@ -11,5 +11,5 @@ response = "Furious by Billy's action, Mrs Bacon seeks revenge and plans a trap.
 Mrs Bacon dug a hole in her backyard, and covered the top with branches and leaves to conceal the opening. 
 When Billy comes by again, Mrs Bacon's plan was to taunt Billy and intentionally make him charge at her, directly leading him into the trap that she laid."
 prereq_cards = [ 27, 13 ]
-resource_changes = [ 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 10 ]
+resource_changes = [ 0, 0, 0, 0, 10, 0, 0, 0, 0, 0, 0, 0, 0 ]
 repeatable = false

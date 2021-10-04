@@ -11,4 +11,4 @@ response = "10 lumber is consumed for the construction of the stable.
 They are happy with the progress of the stable."
 prereq_cards = [  ]
 resource_changes = [ 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, -10 ]
-repeatable = false
+repeatable = true

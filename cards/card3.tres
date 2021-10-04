@@ -11,4 +11,4 @@ response = "Ms Teriyaki brought out her Manga, a japanese stylised comic book wh
 Unfortunately for her, she did not know that the manga is read from right to left. "
 prereq_cards = [  ]
 resource_changes = [ 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-repeatable = false
+repeatable = true

@@ -11,4 +11,4 @@ response = "Professor Albert Eggstein went to the woods and took note the low am
 Albert is concerned."
 prereq_cards = [  ]
 resource_changes = [ 0, 0, 0, -5, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
-repeatable = false
+repeatable = true

@@ -12,4 +12,4 @@ The chickens and the pigs are happy with the progress of the stables.
 The goats are unhappy being tasked to do more work."
 prereq_cards = [  ]
 resource_changes = [ 5, 5, 5, 5, 5, 5, 5, 5, -10, -10, -10, -10, -10 ]
-repeatable = false
+repeatable = true
