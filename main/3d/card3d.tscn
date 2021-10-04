@@ -100,7 +100,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0, 0.25 ),
 "transitions": PoolRealArray( 1, 1 ),
 "update": 1,
-"values": [ Color( 0, 0, 0, 1 ), Color( 0, 1, 0, 1 ) ]
+"values": [ Color( 0, 0, 0, 1 ), Color( 0.466667, 0.866667, 0.466667, 1 ) ]
 }
 
 [sub_resource type="PlaneMesh" id=4]

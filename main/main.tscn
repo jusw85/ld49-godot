@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://common/quit_on_action.gd" type="Script" id=1]
 [ext_resource path="res://common/audio_fader.tscn" type="PackedScene" id=2]
@@ -135,6 +135,23 @@ corner_radius_bottom_left = 15
 [sub_resource type="DynamicFont" id=10]
 size = 18
 font_data = ExtResource( 3 )
+
+[sub_resource type="Animation" id=16]
+resource_name = "fade"
+length = 0.25
+step = 0.0166667
+tracks/0/type = "value"
+tracks/0/path = NodePath("Control/Panel2:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.25 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
 
 [node name="Main" type="Node2D"]
 script = ExtResource( 10 )
@@ -278,7 +295,7 @@ __meta__ = {
 }
 
 [node name="Panel2" type="Panel" parent="Control"]
-visible = false
+modulate = Color( 1, 1, 1, 0 )
 self_modulate = Color( 1, 1, 1, 0.501961 )
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -319,6 +336,9 @@ autowrap = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="ResponseAnimation" type="AnimationPlayer" parent="."]
+anims/fade = SubResource( 16 )
 
 [connection signal="lumber_changed" from="." to="CanvasLayer/HUD" method="_on_Main_lumber_changed"]
 [connection signal="cards_selected" from="Viewports/4cards/Cards" to="." method="_on_Cards_cards_selected"]
