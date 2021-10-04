@@ -7,5 +7,7 @@
 script = ExtResource( 1 )
 front_face = ExtResource( 2 )
 text = "Mr Goatse goes to the mall"
-response = "Mr Goatse went to mall looking for 'Lion's meat' as he believed, eating the meat of the apex predator will make him strong. The butcher misheard and gave him pig's loin instead."
+response = "Mr Goatse went to mall looking for a 'rare drips' as he believed, wearing the fashionable clothing will make him strong. 
+The butcher misheard and gave him \"spare ribs\" instead."
+prereq_cards = [  ]
 resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0 ]

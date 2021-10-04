@@ -8,4 +8,5 @@ script = ExtResource( 1 )
 front_face = ExtResource( 2 )
 text = "Party Day"
 response = "Party Day!!"
+prereq_cards = [  ]
 resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
