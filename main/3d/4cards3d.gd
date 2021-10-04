@@ -42,10 +42,19 @@ func _on_Card_is_clicked(idx):
 #			if _num_selected == 1:
 #				emit_signal("cards_selected", true)
 		else:
-			pass
+			cards[_selected_idx].slide(false)
+			_selected[_selected_idx] = false
+			_num_selected -= 1
+
+			_selected_idx = idx
+			_selected[idx] = true
+			cards[idx].slide(true)
+			_num_selected += 1
+
 	elif _selected[idx]:
-		_selected_idx = -1
-		_selected[idx] = false
-		cards[idx].slide(false)
-		_num_selected -= 1
+		emit_signal("cards_selected", cards[_selected_idx].card_idx)
+#		_selected_idx = -1
+#		_selected[idx] = false
+#		cards[idx].slide(false)
+#		_num_selected -= 1
 #		emit_signal("cards_selected", false)

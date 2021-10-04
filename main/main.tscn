@@ -119,7 +119,7 @@ bg_color = Color( 0, 0, 0, 1 )
 bg_color = Color( 1, 1, 1, 1 )
 
 [sub_resource type="DynamicFont" id=10]
-size = 24
+size = 18
 font_data = ExtResource( 3 )
 
 [node name="Main" type="Node2D"]

@@ -94,7 +94,7 @@ func _on_Go_pressed():
 	$Control/Panel/Panel2/Description.text = ""
 	anim.play("fade_in")
 #	next.visible = true
-	go.visible = false
+#	go.visible = false
 	cards.fade_all()
 	yield(get_tree().create_timer(1.0), "timeout")
 
@@ -118,7 +118,8 @@ func _on_Go_pressed():
 
 
 func _on_Cards_cards_selected(selected):
-	go.visible = selected
+#	go.visible = selected
+	_on_Go_pressed()
 
 
 func _on_Next_pressed():
