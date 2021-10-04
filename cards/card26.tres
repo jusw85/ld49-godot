@@ -10,7 +10,7 @@ text = "Billy Goat climbs a hill"
 response = "Billy Goat went for his morning walk, when he encountered Ramsey returning from the hills. 
 \"How was the hunt?\" ashed Billy.
 \"It's getting harder to find food these days,\" said Ramsey.
-\"You know why? It's because of the damned pigs! Contributing nothing and eating all day. I don't like Ham solo especially, always drinking with Goatse and corrupting him. He is a stain to our community\"
+\"You know why? It's because of the damned pigs! Contributing nothing and eating all day. I don't like Ham solo especially, always drinking with Goatse and corrupting him. He is a stain in our community\"
 Ramsey took notice of Billy's comments."
 prereq_cards = [  ]
 resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, -5, 0, 0, 0, 0 ]

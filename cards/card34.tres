@@ -7,7 +7,7 @@
 script = ExtResource( 1 )
 front_face = ExtResource( 2 )
 text = "Ramsey goes to the kitchen"
-response = "Ramsey was not pleased with the recipe he had, which already contains ten herbs and spices. \"It is missing just one more ingredient, a pronounced spice to balance the greasiness of the meat,\" thought Ramsey.
+response = "Ramsey was not pleased with the recipe he had, which already contained ten herbs and spices. \"It is missing just one more ingredient, a pronounced spice to balance the greasiness of the meat,\" thought Ramsey.
 Just then, Chef Ramsey saw Ms Teriyaki return from the market. Chef Ramsey approached Ms Teriyaki. 
 \"Hello Ms Teriyaki, I would like your advice on a recipe I am working on,\" asked Ramsey. 
 \"In Japan, we use wasabi for all our meals. It has a strong and pungent aroma!\" 

@@ -8,9 +8,9 @@ script = ExtResource( 1 )
 front_face = ExtResource( 2 )
 text = "Ramsey flies a kite"
 response = "On his free days Ramsey enjoys flying his kite. 
-One day, a strong gust of wind suddenly arrived. 
+One day, a strong gust of wind blew through the farm. 
 The wind was too strong and the string broke! 
-The kite flew aways and got stuck in the tree. 
+The kite flew away and got stuck in a tree. 
 Not interested in risking his life to retrieve the kite, Ramsey abandoned it."
 prereq_cards = [  ]
 resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -5, 0 ]
