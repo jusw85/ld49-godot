@@ -7,6 +7,9 @@
 script = ExtResource( 1 )
 front_face = ExtResource( 2 )
 text = "Nanny Goat shares a joke"
-response = "Nanny Goat shared a joke with Cluck Norris. \"Apparently, Goatse ate the manure thinking it was a source of energy!\"  laughed Nanny Goat. Cluck Norris thought it was funny, only for the first time. Bily didn't like it."
+response = "Nanny Goat shared a joke with Cluck Norris. 
+\"Apparently, Goatse ate the manure thinking it was a source of energy!\"  laughed Nanny Goat. 
+Cluck Norris thought it was funny, but only for the first time. 
+Billy didn't like it."
 prereq_cards = [ 35, 10, 32, 17, 9 ]
 resource_changes = [ 0, 0, 5, 0, 0, 0, 0, 0, -5, 10, 0, 0, 0 ]

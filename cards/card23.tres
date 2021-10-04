@@ -10,9 +10,10 @@ text = "Harry Porker casts a spell"
 response = "After the incident at the barn, Harry Porker was convinced that Ms Teriyaki, a fellow weeb, is the perfect waifu for him. He decides to brew a love potion that will make Ms Teriyaki fall in love with him. As he was brewing, Ms teriyaki came by and looking for him at his lab. 
 \"Hi Harry, I was wondering if you are feeling better after the nasty fall,\" asked Ms Teriyaki.
 \"Well, that was nothing much, as I was aiming the haystack anyway,\" Harry replied, \"By the way, would you like a drink if you are thirsty?\" asked Harry.
-\"I would love to! I know a nice place serving japanese tea nearby,\" suggested Ms Teriyaki excited.
-\"Oh, no way I would pay for overpriced tea. I meant to offer you this lov.. I mean, 'health potion' that i just brewed. Would you like to drink it?\"
+\"I would love to! I know a nice place serving japanese tea nearby,\" suggested Ms Teriyaki excitedly.
+\"Oh, no way I would pay for overpriced tea. I meant to offer you this lov.. I mean, 'health potion' that i just brewed. Please have it!\"
 Ms Teriyaki accepts his health potion.
-\"Just according to Keikaku\", thought Harry"
+\"Just according to Keikaku\", thought Harry. 
+(Translators' note: Keikaku means plan)"
 prereq_cards = [ 21, 22, 17, 9, 28, 1 ]
 resource_changes = [ -5, 0, 0, 0, 0, 0, 0, 20, 0, 0, 0, 0, 0 ]
