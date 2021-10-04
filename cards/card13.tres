@@ -13,3 +13,4 @@ Enraged, Billy charges towards Mrs Bacon, and with the momentum his headbutt lau
 Cluck Norris is pleased with what he saw."
 prereq_cards = [ 27 ]
 resource_changes = [ 0, 0, 5, 0, -10, 0, 0, 0, -10, 0, 0, 0, 10 ]
+repeatable = false

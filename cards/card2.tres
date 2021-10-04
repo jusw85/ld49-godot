@@ -11,3 +11,4 @@ response = "As Ms Teriyaki walked through the farmer's market, she saw all her d
 She was clearly traumatised by what she saw and hurried back to the farm, after purchasing the essential supplies for the farm."
 prereq_cards = [  ]
 resource_changes = [ -10, -5, -5, -5, 0, 0, 5, 0, 0, 0, 5, 5, 10 ]
+repeatable = false

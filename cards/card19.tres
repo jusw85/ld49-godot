@@ -15,3 +15,4 @@ While Ramsey was not looking, Ham Solo and Mr Goatse sneaked into the kitchen an
 Mr Goatse thought it was a good idea to give Colonel Tenders this recipe to cheer him up. \"I will share with him some meat too, hoping he would barbeque some food for everyone!\" said Mr Goatse."
 prereq_cards = [ 2, 34 ]
 resource_changes = [ 0, 0, 0, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0 ]
+repeatable = false

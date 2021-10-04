@@ -10,3 +10,4 @@ text = "Harry Porker reads a magazine"
 response = "Harry Porker frequently enjoys reading men's magazine at the outhouse."
 prereq_cards = [  ]
 resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0 ]
+repeatable = false

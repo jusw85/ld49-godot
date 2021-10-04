@@ -14,3 +14,4 @@ Wiggly Pig  was walking by when she saw Billy playing basketball alone. \"Can I 
 Wiggly is upset, and went home to complain to her mother, Mrs Bacon."
 prereq_cards = [  ]
 resource_changes = [ 0, 0, 0, 0, -5, -5, 0, 0, 5, 0, 0, 0, 0 ]
+repeatable = false

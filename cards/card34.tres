@@ -14,3 +14,4 @@ Just then, Chef Ramsey saw Ms Teriyaki return from the market. Chef Ramsey appro
 Delighted, Chef Ramsey quickly jotted down the 11th ingredient into the slip of paper, his secret recipe for BBQ chicken."
 prereq_cards = [ 2 ]
 resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0 ]
+repeatable = false

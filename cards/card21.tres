@@ -11,3 +11,4 @@ response = "Ham Solo watches a movie, snacking on potato chips throughout the fi
 Harry Porker was not pleased."
 prereq_cards = [  ]
 resource_changes = [ 0, 0, 0, 0, 0, 0, 5, -5, 0, 0, 0, 0, 0 ]
+repeatable = false

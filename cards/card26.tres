@@ -14,3 +14,4 @@ response = "Billy Goat went for his morning walk, when he encountered Ramsey ret
 Ramsey took notice of Billy's comments."
 prereq_cards = [  ]
 resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, -5, 0, 0, 0, 0 ]
+repeatable = false

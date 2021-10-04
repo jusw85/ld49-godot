@@ -14,3 +14,4 @@ The kite flies aways and got stuck into the tree.
 Not interested to risk his life to retrieve the kite, Ramsey abandoned the kite."
 prereq_cards = [  ]
 resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -5, 0 ]
+repeatable = false

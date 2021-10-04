@@ -16,3 +16,4 @@ The love potion starts to take effect, making her fall in love with the first ma
 At this moment, a dazed and confused Billy Goat came by, and as they locked eyes, all the hatred they had for each other was momentarily gone."
 prereq_cards = [ 21, 22, 17, 9, 28, 1, 23 ]
 resource_changes = [ 0, 0, 0, 0, 20, 0, 0, 0, 20, 0, 0, 0, 0 ]
+repeatable = false

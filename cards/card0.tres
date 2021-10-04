@@ -10,3 +10,4 @@ text = "Empty"
 response = "Empty"
 prereq_cards = [  ]
 resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+repeatable = false

@@ -13,3 +13,4 @@ As he was not a mushroom expert, he went ask Ham Solo for advice.
 Relieved, Billy Goat traded with Ham Solo, not knowing he just bought psychedelic mushrooms. Billy consumed one of the mushrooms and had a spiritual awakening."
 prereq_cards = [ 17, 9, 28 ]
 resource_changes = [ 0, 0, 0, 0, 0, 0, 5, 0, 20, 0, 0, 0, 0 ]
+repeatable = false

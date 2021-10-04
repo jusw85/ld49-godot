@@ -13,3 +13,4 @@ Cluck Norris thought it was funny, but only for the first time.
 Billy didn't like it."
 prereq_cards = [ 35, 10, 32, 17, 9 ]
 resource_changes = [ 0, 0, 5, 0, 0, 0, 0, 0, -5, 10, 0, 0, 0 ]
+repeatable = false

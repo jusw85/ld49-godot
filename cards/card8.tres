@@ -14,3 +14,4 @@ Wiggly Pig is displeased.
 Nanny Goat is pleased."
 prereq_cards = [  ]
 resource_changes = [ 0, 0, 10, -5, 0, -5, 0, 0, -5, 5, 0, 0, 10 ]
+repeatable = false

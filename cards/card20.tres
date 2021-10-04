@@ -14,3 +14,4 @@ Ham solo draws his revolver from the holster and took aim at Billy Goat, ready t
 Out of nowhere, Ramsey appears and wrestled him to the ground, but the shot has already rang out, triggering Colonel Tender's PTSD."
 prereq_cards = [ 27, 17, 9, 28, 25, 13, 16, 5 ]
 resource_changes = [ 0, 0, -30, 0, 0, 0, -10, 0, 0, 0, 0, -10, 0 ]
+repeatable = false

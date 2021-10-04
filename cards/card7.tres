@@ -11,3 +11,4 @@ response = "Cluck Norris hates washing the dishes as it will get all his feather
 Fortunately for him, Nanny Goat always offer to help him wash the dishes when she is around. "
 prereq_cards = [  ]
 resource_changes = [ 0, 0, -5, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0 ]
+repeatable = false

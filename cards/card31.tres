@@ -11,3 +11,4 @@ response = "Mr Goatse went to mall looking for a 'rare drips' as he believed, we
 The butcher misheard and gave him \"spare ribs\" instead."
 prereq_cards = [  ]
 resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0 ]
+repeatable = false

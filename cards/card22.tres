@@ -14,3 +14,4 @@ With this relevation, Harry thought to himself, perhaps he should use magic and 
 He climbed to the loft of the barn and positions himself. With both hands grasping the shaft, he leaped off the loft window - only to crash landing into the hay cart below."
 prereq_cards = [ 21 ]
 resource_changes = [ 0, 0, 0, 0, 0, 10, 0, -10, 0, 0, 0, 0, 10 ]
+repeatable = false

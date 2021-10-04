@@ -13,3 +13,4 @@ Colonel Tenders goes to the bar for a drink, and saw Ham Solo at the counter as 
 Colonel Tenders felt much better after that."
 prereq_cards = [  ]
 resource_changes = [ 0, 5, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0 ]
+repeatable = false

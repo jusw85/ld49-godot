@@ -12,3 +12,4 @@ Nanny Goat wants Cluck Norris to give her one-to-one private lessons at her home
 Nanny informed Billy to go to the hills and help her collect some edible mushrooms for dinner."
 prereq_cards = [ 17, 9 ]
 resource_changes = [ 0, 0, 10, 0, 0, 0, 0, 0, -5, 10, 0, 0, 0 ]
+repeatable = false

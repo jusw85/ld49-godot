@@ -11,3 +11,4 @@ response = "Professor Albert Eggstein pondered the issue of labour shortage due 
 Nanny Goat and Harry Porker had a good laugh, exclaiming on the absurdity of the proposal. \"Wait till he tells us that manure is a viable source of energy\", Nanny chuckled. Billy was confused."
 prereq_cards = [ 35 ]
 resource_changes = [ 0, 0, 0, -5, 0, 0, 0, 10, 0, 10, 0, 0, 0 ]
+repeatable = false

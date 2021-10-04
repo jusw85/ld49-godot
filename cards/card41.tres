@@ -10,3 +10,4 @@ text = "Party Day"
 response = "Party Day!!"
 prereq_cards = [  ]
 resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+repeatable = false

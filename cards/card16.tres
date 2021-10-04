@@ -12,3 +12,4 @@ Billy goat, who was under the effects of the magic mushrooms, expressed deep reg
 Wiggly, thinking that Billy is charging at her, feared for her life and ran towards home to find Mrs Bacon."
 prereq_cards = [ 27, 17, 9, 28, 25, 13 ]
 resource_changes = [ 0, 0, 0, 0, 0, -20, 0, 0, 0, 0, 0, 0, 0 ]
+repeatable = false

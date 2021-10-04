@@ -17,3 +17,4 @@ Ms Teriyaki accepts his health potion.
 (Translators' note: Keikaku means plan)"
 prereq_cards = [ 21, 22, 17, 9, 28, 1 ]
 resource_changes = [ -5, 0, 0, 0, 0, 0, 0, 20, 0, 0, 0, 0, 0 ]
+repeatable = false

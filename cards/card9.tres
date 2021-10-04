@@ -14,3 +14,4 @@ Cluck Norris is inspired, and thought that this is a good workout to train the f
 Cluck Norris invited everyone to join his gym class."
 prereq_cards = [ 17 ]
 resource_changes = [ 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ]
+repeatable = false

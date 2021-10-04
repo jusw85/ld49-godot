@@ -15,3 +15,4 @@ Not wanting to be discovered, Cluck Norris roundhouse kicked the front door and 
 In fear, Nanny Goat escaped through the back door."
 prereq_cards = [ 21, 22, 17, 9, 28 ]
 resource_changes = [ 0, 0, -15, 0, 0, 0, 0, 0, 0, -15, 0, 0, 10 ]
+repeatable = false

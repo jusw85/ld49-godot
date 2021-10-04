@@ -15,3 +15,4 @@ The pigs quickly gorged into the grilled meat, without knowing what they were ea
 Ramsey and Goatse was watching."
 prereq_cards = [ 2, 34, 19, 26, 4, 36 ]
 resource_changes = [ 0, 10, 0, 0, 10, 10, 10, 10, 0, 0, 10, -5, 0 ]
+repeatable = false

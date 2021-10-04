@@ -11,3 +11,4 @@ response = "In her free time, Nanny Goat will listen to her favourite 80s pop mu
 Her husband, Billy Goat, hates it."
 prereq_cards = [  ]
 resource_changes = [ 0, 0, 0, 0, 0, 0, 0, 0, -5, 5, 0, 0, 0 ]
+repeatable = false
