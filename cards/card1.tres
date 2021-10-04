@@ -10,7 +10,8 @@ text = "Ms Teriyaki learns japanese"
 response = "Ms Teriyaki was reading her japanese text when she heard a loud crash outside the barn. She rushed out and saw a badly bruised Harry porker on top of a broken cart.
 \"Omae Wa Mou Shindeiru!\" exclaimed Ms Teriyaki.
 \"NANI?!\" reacted Harry instinctively, as a typical weeb response.
-Meanwhile, Cluck Norris who was having his private gym lessons at Nanny Goat's house, heard the loud cry. He mistakenly believed it was Billy Goat's voice, returning from the hills, shouting his wife's name.
-Not wanting to be discovered, Cluck Norris roundhouse kicked the front door and fled. In fear, Nanny Goat escaped through the back door."
+Meanwhile, Cluck Norris who was having his private gym lessons at Nanny Goat's house, heard the loud cry. He mistakenly believed it was Billy Goat's voice, returning from the hills, shouting his wife's name!
+Not wanting to be discovered, Cluck Norris roundhouse kicked the front door and fled. 
+In fear, Nanny Goat escaped through the back door."
 prereq_cards = [ 21, 22, 17, 9, 28 ]
 resource_changes = [ 0, 0, -15, 0, 0, 0, 0, 0, 0, -15, 0, 0, 10 ]
