@@ -1,6 +1,6 @@
-# Ludum Dare 49 - Theme: TBD
+# Ludum Dare 49 - Theme: Unstable
 Ludum Dare 49 in Godot
 
-Title: TBD
+Title: Animal Farm
 
-https://ldjam.com/events/ludum-dare/49/
+https://ldjam.com/events/ludum-dare/49/animal-farm
